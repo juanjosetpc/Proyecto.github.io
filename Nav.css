@@ -8,20 +8,7 @@
     color:gray;
 }
 
-#perfil
+.nav-link:hover
 {
-    padding: 0.6%;
-    color: white;
-    float: right;
-    position: relative;
-    left: -4%;
-    border: 1px solid white;
-    border-radius: 30%;
-    text-decoration: none;
-}
-
-#perfil:hover
-{
-    color:black;
-    background-color: white;
+    color:yellow;
 }
