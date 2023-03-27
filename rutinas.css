@@ -1,0 +1,23 @@
+@import url(Nav.css);
+
+*{
+    background: #000000;
+}
+
+h1#titulo{
+position: absolute;
+width: 845px;
+height: 59px;
+left: 277px;
+top: 147px;
+
+font-family: 'Inder';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 50px;
+text-align: center;
+text-transform: capitalize;
+
+color: #FFFFFF;
+}

@@ -1,3 +1,10 @@
+nav{
+    background-color: rgba(10, 10, 10, 1);
+}
+
+
+
+
 .nav-link
 {
     color: white;
@@ -5,7 +12,7 @@
 
 #current
 {
-    color:gray;
+    color:rgba(8, 139, 180, 1);
 }
 
 .nav-link:hover
