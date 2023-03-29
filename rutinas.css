@@ -5,19 +5,18 @@
 }
 
 h1#titulo{
-position: absolute;
-width: 845px;
-height: 59px;
-left: 277px;
-top: 147px;
-
+width: 500px;
 font-family: 'Inder';
 font-style: normal;
 font-weight: 400;
-font-size: 40px;
-line-height: 50px;
-text-align: center;
-text-transform: capitalize;
+font-size: 30px;
 
 color: #FFFFFF;
+}
+
+img{
+width: 382px;
+height: 574px;
+
+border: 5px solid #000000;
 }

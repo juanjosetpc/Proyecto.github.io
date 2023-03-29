@@ -2,12 +2,15 @@ nav{
     background-color: rgba(10, 10, 10, 1);
 }
 
-
+.navbar-toggler-icon{
+    
+   background-image: url(bx-menu-white.svg);
+}
 
 
 .nav-link
 {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 #current
