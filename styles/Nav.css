@@ -15,10 +15,14 @@ nav{
 
 #current
 {
-    color:rgba(8, 139, 180, 1);
+    color:#088BB4;
 }
 
 .nav-link:hover
 {
     color:yellow;
+}
+
+#barra{
+    background-color: #0A0A0A;
 }
