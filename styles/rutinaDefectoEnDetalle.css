@@ -1,1 +1,28 @@
 @import url(Nav.css);
+
+#tituloRutina{
+    background-image: url("");
+    background-size: cover;
+    background-position: center center;
+}
+
+#dia{
+    background-color:#69737B;
+}
+
+body{
+    background-color: black;;
+}
+
+#dia h1{
+    color: white;
+}
+
+#tituloRutina h1{
+    color: white;
+}
+
+#corazon{
+    margin-left: 5%;
+    color: white;
+}
