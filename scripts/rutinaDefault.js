@@ -15,19 +15,23 @@ enlaces.forEach((enlace) => {
 
     // Obtener el título del enlace
     const titulo = enlace.getAttribute('data-nombreRutina');
+    const imagen = enlace.getAttribute('data-urlImagen')
 
     // Redirigir a la nueva página con los datos de la rutina en el parámetro search
-    window.location.href = `rutinaDefaultEnDetalle.html?nombreRutina=${encodeURIComponent(titulo)}`;
+    window.location.href = `rutinaDefaultEnDetalle.html?nombreRutina=${encodeURIComponent(titulo)}&urlImagen=${encodeURIComponent(imagen)}`;
   });
 });
 
 // Leer el parámetro search de la URL
 const params = new URLSearchParams(window.location.search);
 const titulo = params.get('nombreRutina');
+const imagen = params.get('urlImagen')
 
 // Mostrar el título en la página
 const tituloElement = document.getElementById('nombreRutina');
 tituloElement.textContent = titulo;
+const divTituloBackgroundImage = document.getElementById('tituloRutina');
+divTituloBackgroundImage.style.backgroundImage = `url(${imagen}.jpeg)`;
 
 //---------------------------------------------------------------------------------------
 const dia = document.getElementById("tituloDias");

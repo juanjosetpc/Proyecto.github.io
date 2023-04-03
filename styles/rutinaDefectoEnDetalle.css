@@ -1,9 +1,10 @@
 @import url(Nav.css);
 
 #tituloRutina{
-    background-image: url("");
+    height: 10em;
     background-size: cover;
     background-position: center center;
+    color: #FFFF;
 }
 
 #dia{
