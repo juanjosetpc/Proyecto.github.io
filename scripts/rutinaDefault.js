@@ -18,7 +18,7 @@ enlaces.forEach((enlace) => {
     const imagen = enlace.getAttribute('data-urlImagen')
 
     // Redirigir a la nueva página con los datos de la rutina en el parámetro search
-    window.location.href = `rutinaDefaultEnDetalle.html?nombreRutina=${encodeURIComponent(titulo)}&urlImagen=${encodeURIComponent(imagen)}`;
+    window.location.href = `rutinaDefaultEnDetalle-pruebaConJSON.html?nombreRutina=${encodeURIComponent(titulo)}&urlImagen=${encodeURIComponent(imagen)}`;
   });
 });
 
@@ -31,7 +31,7 @@ const imagen = params.get('urlImagen')
 const tituloElement = document.getElementById('nombreRutina');
 tituloElement.textContent = titulo;
 const divTituloBackgroundImage = document.getElementById('tituloRutina');
-divTituloBackgroundImage.style.backgroundImage = `url(${imagen}.jpeg)`;
+divTituloBackgroundImage.style.backgroundImage = `url(${imagen})`;
 
 //---------------------------------------------------------------------------------------
 const dia = document.getElementById("tituloDias");
