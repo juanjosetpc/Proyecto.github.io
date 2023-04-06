@@ -23,39 +23,61 @@
             <div class="card-body">
               <main class="form-signin w-100 m-auto">
                 <div class="form-floating">
-                    <input type="text" class="form-control" id="usuario" placeholder="Usuario">
-                    <label for="usuario">Usuario</label>
+                    <input type="text" class="form-control" id="usuario">
+                    <label for="usuario">Usuario *</label>
                   </div>
 
                 </br>
 
                 <div class="form-floating">
-                  <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                  <input type="password" class="form-control" id="password">
+                  <label for="password">Contraseña *</label>
+                  <div id="passwordHelpBlock" class="form-text">
+                    Tu contraseña debe tener más de 6 caracteres.
+                  </div>
+                </div>
+
+              </br>
+              <div class="row g-2">
+                <div class="col-md">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="peso">
+                    <label for="peso">Peso</label>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="edad">
+                    <label for="edad">Edad</label>
+                  </div>
+                </div>
+              </div>
+
+            
+                  </br>
+
+          
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="email">
                   <label for="email">Email</label>
                 </div>
 
-                </br>
-
-                <div class="form-floating">
-                    <input type="text" class="form-control" id="eda" placeholder="name@example.com">
-                    <label for="edad">Edad</label>
-                  </div>
-  
-                  </br>
-
-                  <div class="form-floating">
-                    <input type="text" class="form-control" id="peso" placeholder="name@example.com">
-                    <label for="peso">Peso</label>
-                  </div>
-  
-                  </br>
-
-                <div class="form-floating">
-                  <input type="password" class="form-control" id="password" placeholder="Password">
-                  <label for="password">Contraseña</label>
-                </div>
               </br>
-              <button id="guardar" class="btn btn-dark btn-lg">Guardar</button>
+
+              <div class="form-floating">
+                <input type="text" class="form-control" id="telefono">
+                <label for="telefono">Telefono</label>
+              </div>
+
+              </br>
+              <div class="container">
+                <div class="row">
+
+                  <div class="column">
+                    <button id="guardar" class="float-start btn btn-dark btn" >Guardar</button>
+                    <button id="yatengo"class="float-end btn btn-dark btn">Ya estoy registrado</button>
+                  </div>
+                </div>
              
             </main>    
             </div>

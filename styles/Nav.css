@@ -25,4 +25,6 @@
 .nav-link:hover
 {
     color:yellow;
+    cursor: pointer;
 }
+

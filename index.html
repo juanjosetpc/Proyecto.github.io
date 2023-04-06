@@ -1,18 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
-    <title>Inicio</title>
+<title>Pump Power</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+i:hover{
+    cursor: pointer;
+}
+    
+
+.bgimg-1 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url('/images/rutinasDefault/fullbody-banner.jpeg');
+  min-height: 100%;
+}
+
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1{
+    background-attachment: scroll;
+    
+  }
+}
+</style>
 </head>
-    <body>
-        <header>        </header>
-
-        <section></section>
+<body>
 
 
-        <footer></footer>
-    </body>
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <button id="iniciar" class="float-start btn btn-dark btn"style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: 4rem;" >
+    Iniciar Sesión</button>
+  </div>
+</div>
+
+
+<footer class="w3-center w3-black w3-padding-64  w3-hover-opacity-off">
+    <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Málaga, España<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Teléfono: +34 123 45 67 89<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: correo@mail.com<br>
+        </div>
+        
+        
+      </div>
+  <div class="w3-xlarge w3-section">
+    <i id="facebook"class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i id="instagram"class="fa fa-instagram w3-hover-opacity"></i>
+    <i  id="snapchat"class="fa fa-snapchat w3-hover-opacity"></i>
+    <i  id="pinterest"class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i  id="twitter"class="fa fa-twitter w3-hover-opacity"></i>
+    <i  id="linkedin"class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+
+</footer>
+ 
+<script>
+document.querySelector("#iniciar").addEventListener("click",function () {window.location.href = "InicioSesion.html?"})
+
+document.querySelector("#facebook").addEventListener("click",function () {window.location.href = "https://es-es.facebook.com/"})
+document.querySelector("#instagram").addEventListener("click",function () {window.location.href = "https://www.instagram.com/"})
+document.querySelector("#snapchat").addEventListener("click",function () {window.location.href = "https://www.snapchat.com/"})
+document.querySelector("#pinterest").addEventListener("click",function () {window.location.href = "https://www.pinterest.es/"})
+document.querySelector("#twitter").addEventListener("click",function () {window.location.href = "https://twitter.com/"})
+document.querySelector("#linkedin").addEventListener("click",function () {window.location.href = "https://es.linkedin.com/"})
+</script>
+
+</body>
 </html>
