@@ -7,17 +7,24 @@
     color: #FFFF;
 }
 
-#dia{
+.dia, button.accordion-button,.accordion-button.collapsed::after{
     background-color:#69737B;
+    color: #FFFF;
+    font-size: 20px;
+}
+
+img{
+    float: left;
 }
 
 body{
     background-color: black;;
 }
 
-#dia h1{
-    color: white;
+.accordion-item{
+background-color: #000000;
 }
+
 
 #tituloRutina h1{
     color: white;
