@@ -20,7 +20,14 @@ function authenticate()
     const user1 = user.value;
     const contrasena1 = contrasena.value;
 
-    let contrasena2 = storage.getItem(user1);
+try {
+    let myData = JSON.parse(storage.getItem(user1));
+    const contrasena2 = myData.contrasena;
+} catch (error) {
+    alert("Usuario no registrado");
+}
+    let myData = JSON.parse(storage.getItem(user1));
+    const contrasena2 = myData.contrasena;
 
     if(contrasena1==contrasena2 && contrasena1 != "")
     {
@@ -28,7 +35,7 @@ function authenticate()
     }
     else
     {
-        alert("Datos Incorrectos");
+        alert("Contraseña Incorrecta");
     }
     
 
