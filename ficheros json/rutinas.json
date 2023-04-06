@@ -1,0 +1,163 @@
+{
+    "rutinas": [
+        {
+            "id": 0,
+            "nombre": "Torso-Pierna",
+            "dias": [
+                {
+                    "dia": "Lunes",
+                    "ejercicios": [
+                        {
+                            "nombre": "Press de banca",
+                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/remo%20con%20barra.png",
+                            "series": 3,
+                            "repeticiones": 10
+                        },
+                        {
+                            "nombre": "Sentadillas",
+                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/aperturasTumbado.png",
+                            "series": 4,
+                            "repeticiones": 8
+                        }
+                    ]
+                },
+                {
+                    "dia":"Martes",
+                    "ejercicios":[
+                        {
+                            "nombre": "Press de banca",
+                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/remo%20con%20barra.png",
+                            "series": 3,
+                            "repeticiones": 10
+                          },
+                          {
+                            "nombre": "Sentadillas",
+                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/aperturasTumbado.png",
+                            "series": 4,
+                            "repeticiones": 8
+                          }
+
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "nombre": "FullBody",
+            "dias": [
+                {
+                    "dia": "Lunes",
+                    "ejercicios": [
+                        {
+                            "nombre": "Press de banca",
+                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/remo%20con%20barra.png",
+                            "series": 3,
+                            "repeticiones": 10
+                        },
+                        {
+                            "nombre": "Sentadillas",
+                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/aperturasTumbado.png",
+                            "series": 4,
+                            "repeticiones": 8
+                        }
+                    ]
+                },
+                {
+                    "dia":"Miércoles",
+                    "ejercicios":[
+                        {
+                            "nombre": "Press de banca",
+                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/remo%20con%20barra.png",
+                            "series": 3,
+                            "repeticiones": 10
+                          },
+                          {
+                            "nombre": "Sentadillas",
+                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/aperturasTumbado.png",
+                            "series": 4,
+                            "repeticiones": 8
+                          }
+
+                    ]
+                },
+                {
+                    "dia":"Viernes",
+                    "ejercicios":[
+                        {
+                            "nombre": "Press de banca",
+                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/remo%20con%20barra.png",
+                            "series": 3,
+                            "repeticiones": 10
+                          },
+                          {
+                            "nombre": "Sentadillas",
+                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/aperturasTumbado.png",
+                            "series": 4,
+                            "repeticiones": 8
+                          }
+
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "Tiron-Empuje",
+            "dias": [
+                {
+                    "dia": "Lunes",
+                    "ejercicios": [
+                        {
+                            "nombre": "Press de banca",
+                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/remo%20con%20barra.png",
+                            "series": 3,
+                            "repeticiones": 10
+                        },
+                        {
+                            "nombre": "Sentadillas",
+                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/aperturasTumbado.png",
+                            "series": 4,
+                            "repeticiones": 8
+                        }
+                    ]
+                },
+                {
+                    "dia":"Miércoles",
+                    "ejercicios":[
+                        {
+                            "nombre": "Press de banca",
+                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/remo%20con%20barra.png",
+                            "series": 3,
+                            "repeticiones": 10
+                          },
+                          {
+                            "nombre": "Sentadillas",
+                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/aperturasTumbado.png",
+                            "series": 4,
+                            "repeticiones": 8
+                          }
+
+                    ]
+                },
+                {
+                    "dia":"Viernes",
+                    "ejercicios":[
+                        {
+                            "nombre": "Press de banca",
+                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/remo%20con%20barra.png",
+                            "series": 3,
+                            "repeticiones": 10
+                          },
+                          {
+                            "nombre": "Sentadillas",
+                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/aperturasTumbado.png",
+                            "series": 4,
+                            "repeticiones": 8
+                          }
+
+                    ]
+                }
+            ]
+        }
+    ]
+}
