@@ -1,0 +1,3 @@
+Comentario sobre listaEjercicios.jsonp, basicamente tiene acaba en p para distinguirla de que 
+se le hace una llamada de una función de ejercicios.js
+Si solo quieres en Json haces Save As y le pones el .json
