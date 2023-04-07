@@ -1,0 +1,82 @@
+miCallback([
+    {
+    "tipoMuscular":"Pecho",
+    "nombre":"Press Banca con Barra",
+    "descripcion":"Empuja esas barras",
+    "series":"3",
+    "repeticiones":"8",
+    "img": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/barbell-bench-press.jpg"
+    },
+    {
+    "tipoMuscular":"Pecho",
+    "nombre":"Press Superior con Mancuerna",
+    "descripcion":"Empuja esas barras",
+    "series":"3",
+    "repeticiones":"8",
+    "img": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/Press-superior-mancuernas.png"
+    },
+    {
+    "tipoMuscular":"Pecho",
+    "nombre":"Aperturas de Pecho",
+    "descripcion":"Empuja esas mancuernas",
+    "series":"5",
+    "repeticiones":"10",
+    "img": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/aperturasTumbado.png"
+    },
+    {
+    "tipoMuscular":"Espalda",
+    "nombre":"Remo con Barra",
+    "descripcion": "Rema muy fuerte",
+    "series":"5",
+    "repeticiones":"10",
+    "img":"https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/remo%20con%20barra.png"
+    },
+    {
+    "tipoMuscular":"Espalda",
+    "nombre":"Jalon en Polea",
+    "descripcion": "Rompe la polea",
+    "series":"5",
+    "repeticiones":"10",
+    "img":"https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/jalon%20en%20polea.png"
+    },
+    {
+    "tipoMuscular":"Espalda",
+    "nombre":"Dominadas",
+    "descripcion": "Saca tus alas a volar",
+    "series":"4",
+    "repeticiones":"8",
+    "img":"https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/Dominadas.png"
+    },   
+    {
+    "tipoMuscular":"Espalda",
+    "nombre":"Remo con Mancuerna",
+    "descripcion": "Rema más fuerte que antes",
+    "series":"5",
+    "repeticiones":"10",
+    "img":"https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/Remo-con-mancuerna.png"
+    },
+    {
+    "tipoMuscular":"Piernas",
+    "nombre":"Zancada",
+    "descripcion": "Muerte asegurada",
+    "series":"3",
+    "repeticiones":"15",
+    "img":"https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/Zancada.png"
+    },
+    {
+    "tipoMuscular":"Piernas",
+    "nombre":"Sentadilla",
+    "descripcion": "Buenos gluteos",
+    "series":"4",
+    "repeticiones":"10",
+    "img":"https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/Sentadilla.png"
+    },
+    {
+    "tipoMuscular":"Pienas",
+    "nombre":"Prensa Inclinada",
+    "descripcion": "Empuja por tu vida",
+    "series":"5",
+    "repeticiones":"12",
+    "img":"https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/Prensa.png"
+    }
+]);
