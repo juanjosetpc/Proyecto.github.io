@@ -1,36 +1,51 @@
 @import url(Nav.css);
 
-#tituloRutina{
+#tituloRutina {
     height: 10em;
     background-size: cover;
     background-position: center center;
     color: #FFFF;
 }
 
-.dia, button.accordion-button,.accordion-button.collapsed::after{
-    background-color:#69737B;
+.dia,
+.accordion-button,
+.accordion-button:not(.collapsed) {
+    display: flex;
+    justify-content: center;
+    background-color: #69737B;
     color: #FFFF;
-    font-size: 20px;
+    font-size: 25px;
+    box-shadow: none;
 }
 
-img{
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-button{
+    width: 50%;
+}
+.accordion-button::after, .accordion-button:not(.collapsed)::after {
+    background-image: url(../svg/flecha-desplegable-blanca.svg); 
+    margin-left: 5%;
+}
+
+.accordion-item {
+    background-color: #000000;
+}
+
+img {
     float: left;
 }
 
-body{
-    background-color: black;;
+body {
+    background-color: black;
 }
 
-.accordion-item{
-background-color: #000000;
-}
-
-
-#tituloRutina h1{
+#tituloRutina h1 {
     color: white;
 }
 
-#corazon{
+#corazon {
     margin-left: 5%;
     color: white;
 }
