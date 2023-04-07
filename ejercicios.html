@@ -11,6 +11,12 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles/ejerciciosStyle.css">
+  
+  <script src="/scripts/jquery-3.6.4.js"></script>
+  <script src = "/scripts/ejercicios.js"></script>
+  
+
+
   <title>Ejercicios</title>
 </head>
 
@@ -46,142 +52,19 @@
   </nav>
 
   <!--REFACTORIZAR LO SIGUIENTE CON JSON PARA CARGAR DINAMICAMENTE-->
-
-  <div class="container-fluid">
-    <nav>
-
-    </nav>
-
-
-    <h1 class="bg-light">Ejercicios</h1>
-
-    <div class="row ">
-      <div class="col-sm-3">
-        <label for="grupos-musculares">Filtrar por grupos musculares: </label>
+  <div class = "wrap">
+    <h1>Coleccion de ejercicios</h1>
+    <div class = "ejercicios-wrapper">
+      <div class="category-list">
+        <a href ="#" class="categoryItem" category = "all" >Todos</a>
+        <a href ="#" class="categoryItem" category = "Pecho">Pecho</a>
+        <a href ="#" class="categoryItem" category = "Espalda">Espalda</a>
+        <a href ="#" class="categoryItem" category = "Piernas">Piernas</a>
       </div>
-      <div class="col-sm-3">
-        <select id="grupos-musculares" name="grupos-musculares[]" multiple>
-          <optgroup label="Pecho">
-            <option value="pectoral mayor">Pectoral mayor</option>
-            <option value="pectoral menor">Pectoral menor</option>
-          </optgroup>
-          <optgroup label="Espalda">
-            <option value="dorsal ancho">Dorsal ancho</option>
-            <option value="romboides">Romboides</option>
-          </optgroup>
-          <optgroup label="Cuádriceps">
-            <option value="recto femoral">Recto femoral</option>
-            <option value="vasto interno">Vasto interno</option>
-            <option value="vasto externo">Vasto externo</option>
-          </optgroup>
-        </select>
-      </div>
+      <section id = "listado-ejercicios"></div>
     </div>
-
-    <div class="row">
-      <div class="col-12">
-        <h4>Pectoral</h4>
-      </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-start">Press plano con barra</h5>
-            <img class="picture-in-card" src="./images/ejercicios/barbell-bench-press.jpg" class="card-img-top"
-              alt="...">
-            <p class="card-text">El press de banca plano con barra es un ejercicio compuesto que trabaja pectoral,
-              deltoides anterior y triceps.</p>
-            <a href="#" class="btn btn-primary">Saber mas</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-start">Press plano con mancuernas</h5>
-            <img class="picture-in-card" src="./images/ejercicios/barbell-bench-press.jpg" class="card-img-top"
-              alt="...">
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Saber mas</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row align-items-start">
-      <div class="col-sm-12">
-        <h4>Espalda</h4>
-      </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-start">Jalón prono en máquina</h5>
-            <img class="picture-in-card" src="./images/ejercicios/barbell-bench-press.jpg" class="card-img-top"
-              alt="...">
-            <p class="card-text">El press de banca plano con barra es un ejercicio compuesto que trabaja pectoral,
-              deltoides anterior y triceps.</p>
-            <a href="#" class="btn btn-primary">Saber mas</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-start">Jalón prono en máquina</h5>
-            <img class="picture-in-card" src="./images/ejercicios/barbell-bench-press.jpg" class="card-img-top"
-              alt="...">
-            <p class="card-text">El press de banca plano con barra es un ejercicio compuesto que trabaja pectoral,
-              deltoides anterior y triceps.</p>
-            <a href="#" class="btn btn-primary">Saber mas</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-start">Jalón prono en máquina</h5>
-            <img class="picture-in-card" src="./images/ejercicios/barbell-bench-press.jpg" class="card-img-top"
-              alt="...">
-            <p class="card-text">El press de banca plano con barra es un ejercicio compuesto que trabaja pectoral,
-              deltoides anterior y triceps.</p>
-            <a href="#" class="btn btn-primary">Saber mas</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-start">Remo con barra</h5>
-            <img class="picture-in-card" src="./images/ejercicios/barbell-bench-press.jpg" class="card-img-top"
-              alt="...">
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Saber mas</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <nav class="pt-3" aria-label="...">
-      <ul class="pagination justify-content-center">
-        <li class="page-item disabled">
-          <a class="page-link">Previous</a>
-        </li>
-        <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#">2</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#">Next</a>
-        </li>
-      </ul>
-    </nav>
-
-
-
-
   </div>
-
-
+  <script src = "/ficheros json/listaEjercicios.jsonp"></script>
 
 
 </body>
