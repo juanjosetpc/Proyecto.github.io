@@ -20,3 +20,13 @@ body{
 #crear{
     background-color:#149073;
 }
+
+.miRutina{
+    display: none;
+    margin: 2%;
+}
+
+.rutinaFav{
+    display: none;
+    margin: 2%;
+}
