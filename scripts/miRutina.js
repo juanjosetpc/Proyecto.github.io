@@ -38,3 +38,28 @@ function abrir2(){
 
 titulo.addEventListener("click",abrir);
 titulo2.addEventListener("click",abrir2);
+
+
+const modalClose = document.getElementById("modalClose");
+const tituloInput = document.getElementById("tituloInput");
+const descripcion = document.getElementById("descripcion");
+const dias = document.getElementById("dias");
+const aceptar = document.getElementById("aceptar");
+
+modalClose.addEventListener("click",function () {tituloInput.value = '';descripcion.value = '';dias.value = '';});
+
+aceptar.addEventListener("click",crearRutina);
+    
+
+function crearRutina()
+{  
+    const rutina = {titulo:tituloInput.value,dias:dias.value,descripcion:descripcion.value};
+
+    const user = localStorage.getItem("Logeado");
+    var misRutinasNumber = localStorage.getItem(user+"misRutinas");
+    misRutinasNumber = parseInt(misRutinasNumber) + 1;
+    storage.setItem(user+"misRutinas",misRutinasNumber);
+
+    localStorage.setItem(user+"rutinaMia"+misRutinasNumber,JSON.stringify(rutina));
+    tituloInput.value = '';descripcion.value = '';dias.value = '';
+}

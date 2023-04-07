@@ -39,19 +39,73 @@
   </nav>
 
       <div class="container-fluid">
+        
         <div id="misRutinas">
+          
           <div id="titulo" class="row">
             <div class="col-6 d-flex align-items-center">
               <h1 id="tituloMisRutinas">Mis Rutinas <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                 </svg></h1>
+                
             </div>
             <div class="col-6 d-flex justify-content-end align-items-center">
-              <button type="button" id="crear" class="btn btn-success float-right">Crear +</button>
+            
+              <button type="button" id="crearNueva" class="btn btn-success float-right" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Crear +</button>
+
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 style="color:black;"class="modal-title fs-5" id="staticBackdropLabel">Crear Nueva Rutina</h1>
+                      <button type="button" id="modalClose"class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="tituloInput">
+                        <label for="tituloInput">Título</label>
+                      </div>
+
+                    </br>
+
+                      <div class="row g-2">
+                        <div class="col-md">
+                          <div class="form-floating">
+                            <input type="text" class="form-control" id="dias">
+                            <label for="dias">Días</label>
+                          </div>
+                        </div>
+                        <div class="col-md">    
+                        </div>
+                        <div class="col-md">                        
+                        </div>
+                      </div>
+                    </br>
+    
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="descripcion">
+                      <label for="descripcion">Descripción</label>
+                    </div>
+      
+                    </div>
+                    <div class="modal-footer">
+                      
+                      <button id="aceptar"type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Aceptar</button>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
             </div>
           </div>
         </div>
-
+        <div style="width: 18rem;"class="card">
+          <div class="card-body">
+            <h5 class="card-title text-start">Titulo Rutina Ejemplo</h5>
+            <a href="#" class="btn btn-primary">Acceder y añadir ejercicios</a>
+          </div>
+        </div>
         <div id="rutinasFav">
             <div id="titulo" class="row">
                 <div class="col-6 d-flex align-items-center">

@@ -32,6 +32,7 @@ function guardarUser()
         let myData = {contrasena:contrasena,edad:edadInput,peso:pesoInput,telefono:telefonoInput,email:emailInput};
         
         storage.setItem(user,JSON.stringify(myData));
+        storage.setItem(user+"misRutinas",0);
     
         window.location.href = "/InicioSesion.html";
     }
