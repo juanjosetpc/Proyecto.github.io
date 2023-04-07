@@ -33,6 +33,7 @@ function guardarUser()
         
         storage.setItem(user,JSON.stringify(myData));
         storage.setItem(user+"misRutinas",0);
+        storage.setItem(user+"favoritas", JSON.stringify([]));
     
         window.location.href = "/InicioSesion.html";
     }
