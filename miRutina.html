@@ -52,7 +52,7 @@
             <div class="col-6 d-flex justify-content-end align-items-center">
             
               <button type="button" id="crearNueva" class="btn btn-success float-right" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Crear +</button>
-
+              
               <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -68,21 +68,60 @@
                       </div>
 
                     </br>
-
+                  
                       <div class="row g-2">
+                        <h6 style="color:black;"> Días</h1>
                         <div class="col-md">
-                          <div class="form-floating">
-                            <input type="text" class="form-control" id="dias">
-                            <label for="dias">Días</label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="lunes">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Lunes
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="jueves">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Jueves
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="domingo">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Domingo
+                            </label>
                           </div>
                         </div>
                         <div class="col-md">    
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="martes">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Martes
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="viernes">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Viernes
+                            </label>
+                          </div>
                         </div>
-                        <div class="col-md">                        
+                        <div class="col-md">    
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="miercoles">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Miércoles
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="sabado">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Sábado
+                            </label>
+                          </div>                    
                         </div>
                       </div>
                     </br>
-    
+                  
                     <div class="form-floating">
                       <input type="text" class="form-control" id="descripcion">
                       <label for="descripcion">Descripción</label>
@@ -100,12 +139,10 @@
             </div>
           </div>
 
-          <div style="width: 18rem;"class="card miRutina">
-            <div class="card-body">
-              <h5 class="card-title text-start">Titulo Rutina Ejemplo</h5>
-              <a href="#" class="btn btn-primary">Acceder y añadir ejercicios</a>
-            </div>
+          <div id="divFavoritas">
+
           </div>
+
         </div>
         <div id="rutinasFav">
             <div id="titulo" class="row">
@@ -114,9 +151,7 @@
                       <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                     </svg></h1>
                 </div>
-                <div class="col-6 d-flex justify-content-end align-items-center">
-                  <button type="button" id="crear" class="btn btn-success float-right">Crear +</button>
-                </div>
+                
               </div>
         </div>
       </div>

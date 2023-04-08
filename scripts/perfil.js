@@ -2,9 +2,7 @@ const file = document.getElementById("fileInput");
 const image = document.getElementById("displayImage");
 
 const storage = window.localStorage;
-const valores = window.location.search;
-const urlParams = new URLSearchParams(valores);
-const current =  urlParams.get('current');
+const current =  localStorage.getItem("Logeado");
 let myData = JSON.parse(storage.getItem(current));
 
 const username = document.getElementById("username");
@@ -19,11 +17,6 @@ edadcolumna.innerHTML = myData.edad;
 pesocolumna.innerHTML = myData.peso;
 emailcolumna.innerHTML = myData.email;
 telefonocolumna.innerHTML = myData.telefono;
-
-
-document.querySelector("#redirectInicio").addEventListener("click",function () {window.location.href = "Inicio.html?current=" +current ;})
-
-
 
 file.addEventListener("change",function () {
     const reader = new FileReader();
