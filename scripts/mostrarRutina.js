@@ -31,8 +31,6 @@ function mostrarRutina() {
     .then(response => response.json())
     .then(data => {
 
-
-
       const rutinaAccordion = document.getElementById('rutinaAccordion');
 
       data.rutinas[idRutina].dias.forEach((dia, index) => {

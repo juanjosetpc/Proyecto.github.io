@@ -30,7 +30,6 @@ const idRutina = params.get('idRutina');
 const logeado = localStorage.getItem('Logeado');
 
 
-
 const favo = document.getElementById('corazon-svg');
 favo.style.cursor = "pointer";
 const path = favo.querySelector('path');
