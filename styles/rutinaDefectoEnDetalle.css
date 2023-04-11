@@ -5,6 +5,7 @@
     background-size: cover;
     background-position: center center;
     color: #FFFF;
+    background-color: rgba(105, 115, 123, 1);
 }
 
 .dia,
@@ -12,7 +13,7 @@
 .accordion-button:not(.collapsed) {
     display: flex;
     justify-content: center;
-    background-color: #69737B;
+    background-color:rgba(44, 44, 44, 1);
     color: #FFFF;
     font-size: 25px;
     box-shadow: none;

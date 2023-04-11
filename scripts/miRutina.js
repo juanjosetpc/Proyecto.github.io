@@ -62,9 +62,43 @@ const storage = window.localStorage;
 
 function crearRutina() {
     const rutina = {
-        titulo: tituloInput.value, descripcion: descripcion.value, lunes: lunes.checked, martes: martes.checked, miercoles: miercoles.checked
-        , jueves: jueves.checked, viernes: viernes.checked, sabado: sabado.checked, domingo: domingo.checked
+        titulo: tituloInput.value,
+        descripcion: descripcion.value,
+        dias: []
     };
+
+    if (lunes.checked) {
+        rutina.dias.push({ dia: 'Lunes', ejercicios: [] });
+    }
+    
+    if (martes.checked) {
+        rutina.dias.push({ dia: 'Martes', ejercicios: [] });
+    }
+    
+    if (miercoles.checked) {
+        rutina.dias.push({ dia: 'Miércoles', ejercicios: [] });
+    }
+    
+    if (jueves.checked) {
+        rutina.dias.push({ dia: 'Jueves', ejercicios: [] });
+    }
+    
+    if (viernes.checked) {
+        rutina.dias.push({ dia: 'Viernes', ejercicios: [] });
+    }
+    
+    if (sabado.checked) {
+        rutina.dias.push({ dia: 'Sábado', ejercicios: [] });
+    }
+    
+    if (domingo.checked) {
+        rutina.dias.push({ dia: 'Domingo', ejercicios: [] });
+    }
+
+    // const rutina = {
+    //     titulo: tituloInput.value, descripcion: descripcion.value, lunes: lunes.checked, martes: martes.checked, miercoles: miercoles.checked
+    //     , jueves: jueves.checked, viernes: viernes.checked, sabado: sabado.checked, domingo: domingo.checked
+    // };
 
     const user = localStorage.getItem("Logeado");
     var misRutinasNumber = localStorage.getItem(user + "misRutinas");
@@ -93,8 +127,8 @@ fetch('https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages
     .then(response => response.json())
     .then(data => {
         for (let i = 0; i < data.rutinas.length; i++) {
-            if (arrayFavoritas.includes(data.rutinas[i].id.toString())) {
 
+            if (arrayFavoritas.includes(data.rutinas[i].id.toString())) {
                 var newNode = document.createElement('div');
                 newNode.style.width = "90%";
                 newNode.classList.add("card");
@@ -104,10 +138,13 @@ fetch('https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages
                 var linkNombre = document.createElement('a');
                 var a = document.createElement('button');
                 var h6 = document.createElement('h6');
-                h5.classList.add("card-title");
-                h5.classList.add("text-start");
+                linkNombre.classList.add("card-title");
+                linkNombre.classList.add("text-start");
                 a.classList.add("btn");
                 a.classList.add("btn-danger");
+                a.setAttribute("data-bs-toggle", "modal");
+                a.setAttribute("data-bs-target", "#confirm-delete-modal");
+
                 a.classList.add("float-end");
 
                 linkNombre.innerText = data.rutinas[i].nombre;
@@ -122,17 +159,23 @@ fetch('https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages
                 newNode.appendChild(newNode2);
                 misFavoritas.appendChild(newNode);
 
-                a.addEventListener("click", function () {
+                //Variable temporal para asignar correctamente el id de la rutina al boton correspondiente
+                let idRutina = data.rutinas[i].id.toString(); 
 
-                    arrayFavoritas.splice(i,1);
-                    localStorage.setItem(user + 'favoritas', JSON.stringify(arrayFavoritas));
-                    location.reload();
+                let confirmDeleteButton = document.getElementById("confirm-delete-button");
+                a.addEventListener("click", function () {
+                    confirmDeleteButton.addEventListener("click", function () {
+                        arrayFavoritas.splice(arrayFavoritas.indexOf(idRutina), 1);
+                        localStorage.setItem(user + 'favoritas', JSON.stringify(arrayFavoritas));
+                        location.reload();
+                    });
                 });
+
             }
         }
     });
 
-
+  
 
 //Cards de mis rutinas
 const divFavoritas = document.getElementById("divFavoritas");
@@ -146,38 +189,42 @@ for (let index = 0; index < misRutinasNumber; index++) {
     newNode.classList.add("miRutina");
     var newNode2 = document.createElement('div');
     newNode2.classList.add("card-body");
-    var h5 = document.createElement('h5');
+    var linkNombre = document.createElement('a');
     var a = document.createElement('button');
     var h6 = document.createElement('h6');
-    h5.classList.add("card-title");
-    h5.classList.add("text-start");
+    linkNombre.classList.add("card-title");
+    linkNombre.classList.add("text-start");
     a.classList.add("btn");
     a.classList.add("btn-danger");
     a.classList.add("float-end");
+    a.setAttribute("data-bs-toggle", "modal");
+    a.setAttribute("data-bs-target", "#confirm-delete-modal");
 
+    let confirmDeleteButton = document.getElementById("confirm-delete-button");
     a.addEventListener("click", function () {
+        confirmDeleteButton.addEventListener("click", function () {
+            localStorage.removeItem(user + "rutinaMia" + (index + 1));
 
-        localStorage.removeItem(user + "rutinaMia" + (index + 1));
-
-        location.reload();
+            location.reload();
+        });
     });
+
 
     var miRutina = JSON.parse(localStorage.getItem(user + "rutinaMia" + (index + 1)));
 
     if (!(miRutina == null)) {
-        h5.innerHTML = miRutina.titulo;
+        linkNombre.innerText = miRutina.titulo;
+        linkNombre.href = `miRutinaEnDetalle.html?idRutina=${encodeURIComponent(index+1)}`;
         a.innerHTML = "Borrar";
         h6.innerHTML = miRutina.descripcion;
         newNode2.appendChild(a);
-        newNode2.appendChild(h5);
+        newNode2.appendChild(linkNombre);
 
         newNode2.appendChild(h6);
 
         newNode.appendChild(newNode2);
         divFavoritas.appendChild(newNode);
     }
-
-
 
 }
 

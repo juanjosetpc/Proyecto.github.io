@@ -109,3 +109,91 @@ function mostrarRutina() {
   //----------Crea el contenido dinamicamente (desplegables y tarjetas con los ejercicios)--------
 
 }
+
+function mostrarRutina2() {
+  // Mostrar el título en la página
+  const tituloElement = document.getElementById('nombreRutina');
+  const params = new URLSearchParams(window.location.search);
+  const idRutina = params.get('idRutina');
+  const logeado = localStorage.getItem('Logeado');
+  const data = JSON.parse(localStorage.getItem(logeado+"rutinaMia"+idRutina));
+  tituloElement.textContent = data.titulo;
+
+  // ----------Crea el contenido dinamicamente (desplegables y tarjetas con los ejercicios)--------
+  const rutinaAccordion = document.getElementById('rutinaAccordion');
+
+  data.dias.forEach((dia, index) => {
+    const card = document.createElement('div');
+    card.setAttribute('class', 'accordion-item row')
+
+    const h1 = document.createElement('h1');
+    h1.setAttribute('class', 'accordion-header dia');
+
+    btn = document.createElement('button');
+    btn.setAttribute('type', 'button')
+    btn.setAttribute('data-bs-toggle', 'collapse');
+    btn.setAttribute('data-bs-target', `#dia-${index}`);
+    btn.setAttribute('aria-expanded', 'true');
+    btn.setAttribute('aria-controls', `#dia-${index}`);
+    btn.textContent = dia.dia;
+
+    const collapse = document.createElement('div');
+    if (index === 0) {
+      btn.setAttribute('class', 'accordion-button')
+      collapse.setAttribute('class', 'accordion-collapse collapse show');
+
+    } else {
+      btn.setAttribute('class', 'accordion-button collapsed')
+      collapse.setAttribute('class', 'accordion-collapse collapse')
+    }
+
+    h1.appendChild(btn);
+    card.appendChild(h1);
+
+    collapse.setAttribute('id', `dia-${index}`);
+
+    const divEjerciciosAccordion = document.createElement('div');
+    divEjerciciosAccordion.setAttribute('class', 'accordion-body');
+
+    if(dia.ejercicios.length > 0){
+      dia.ejercicios.forEach(ejercicio => {
+        const ejercicioCard = document.createElement('div');
+        ejercicioCard.setAttribute('class', 'row justify-content-start col-md-6 mt-2 mb-2')
+        ejercicioCard.classList.add('card');
+
+        const ejercicioCardHeader = document.createElement('div');
+        ejercicioCardHeader.classList.add('card-header');
+        ejercicioCardHeader.textContent = ejercicio.nombre;
+
+        const ejercicioCardBody = document.createElement('div');
+        ejercicioCardBody.classList.add('card-body');
+
+        const imagen = document.createElement('img');
+        imagen.classList.add('img-fluid', 'rounded');
+        imagen.setAttribute('src', ejercicio.imagen);
+
+        const series = document.createElement('p');
+        series.textContent = `Series: ${ejercicio.series}`;
+
+        const repeticiones = document.createElement('p');
+        repeticiones.textContent = `Repeticiones: ${ejercicio.repeticiones}`;
+
+        ejercicioCardBody.appendChild(imagen);
+        ejercicioCardBody.appendChild(series);
+        ejercicioCardBody.appendChild(repeticiones);
+
+        ejercicioCard.appendChild(ejercicioCardHeader);
+        ejercicioCard.appendChild(ejercicioCardBody);
+
+        divEjerciciosAccordion.appendChild(ejercicioCard);
+      });
+    }
+
+    collapse.appendChild(divEjerciciosAccordion);
+    card.appendChild(collapse);
+
+    rutinaAccordion.appendChild(card);
+  });
+  //----------Crea el contenido dinamicamente (desplegables y tarjetas con los ejercicios)--------
+
+}

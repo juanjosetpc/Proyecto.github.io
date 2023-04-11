@@ -1,0 +1,19 @@
+{
+    "titulo": "un titulo cualquiera",
+    "descripcion":"una descripcion que el usuario introduzca",
+    "dias":[
+        {
+            "dia":"Lunes",
+            "ejercicios":[]
+
+        },
+        {
+            "dia":"Miércoles",
+            "ejercicios":[]
+        },
+        {
+            "dia":"Viernes",
+            "ejercicios":[]
+        }
+    ]
+}
