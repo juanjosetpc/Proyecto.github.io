@@ -36,3 +36,65 @@ document.addEventListener("DOMContentLoaded",() => {
         
     }
 });
+
+
+const password = document.getElementById("password");
+const peso = document.getElementById("peso");
+const edad = document.getElementById("edad");
+const email = document.getElementById("email");
+const telefono = document.getElementById("telefono");
+
+
+password.value = myData.contrasena;
+peso.value = myData.peso;
+edad.value = myData.edad;
+email.value = myData.email;
+telefono.value = myData.telefono;
+
+const aceptar = document.getElementById("aceptar");
+
+aceptar.addEventListener("click",guardar)
+
+function guardar()
+{
+    const user = current;
+    const contrasena = password.value;
+    const edadInput = edad.value;
+    const pesoInput = peso.value;
+    const emailInput = email.value;
+    const telefonoInput = telefono.value;
+
+    if(contrasena==null || contrasena=="" || contrasena.length <= 6)
+    {
+        alert("Introduzca correctamente los datos.");
+    }
+    else
+    {
+        
+        let myData = {contrasena:contrasena,edad:edadInput,peso:pesoInput,telefono:telefonoInput,email:emailInput};
+        
+        storage.setItem(user,JSON.stringify(myData));
+        storage.setItem(user+"misRutinas",0);
+        storage.setItem(user+"favoritas", JSON.stringify([]));
+        location.reload();
+       
+    }
+}
+
+var icon = document.getElementById("icono")
+icon.style.cursor = "pointer"
+icon.style.height = "100%"
+function togglePassword() {
+    var passwordField = document.getElementById("password");
+    
+    if (passwordField.type === "password") {
+      passwordField.type = "text";
+      
+      icon.classList.remove("bi-eye");
+      icon.classList.add("bi-eye-slash");
+    } else {
+      passwordField.type = "password";
+      icon.classList.remove("bi-eye-slash");
+      icon.classList.add("bi-eye");
+    }
+  }

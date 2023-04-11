@@ -41,3 +41,21 @@ try {
     
 
 }
+
+var icon = document.getElementById("icono")
+icon.style.cursor = "pointer"
+icon.style.height = "100%"
+function togglePassword() {
+    var passwordField = document.getElementById("password");
+    
+    if (passwordField.type === "password") {
+      passwordField.type = "text";
+      
+      icon.classList.remove("bi-eye");
+      icon.classList.add("bi-eye-slash");
+    } else {
+      passwordField.type = "password";
+      icon.classList.remove("bi-eye-slash");
+      icon.classList.add("bi-eye");
+    }
+  }

@@ -189,6 +189,29 @@
     </div>
   </div>
 
+
+  <div class="modal fade" id="confirm-delete-modal" tabindex="-1" role="dialog" aria-labelledby="confirm-delete-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confirm-delete-modal-label">Confirmar eliminación</h5>
+        </div>
+        <div class="modal-body">
+          <span>
+              Estás a punto de borrar esta rutina de tu lisza de favoritas,
+              <strong>esta acción no se puede deshacer</strong>. <br><br>
+              ¿Seguro que quieres eliminarla? 
+          </span>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-danger" id="confirm-delete-button">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
   <script type="text/javascript" src="scripts/inicio.js"></script>
   <script type="text/javascript" src="scripts/miRutina.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

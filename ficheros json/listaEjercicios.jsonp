@@ -72,7 +72,7 @@ miCallback([
     "img":"https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/Sentadilla.png"
     },
     {
-    "tipoMuscular":"Pienas",
+    "tipoMuscular":"Piernas",
     "nombre":"Prensa Inclinada",
     "descripcion": "Empuja por tu vida",
     "series":"5",
