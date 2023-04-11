@@ -1,80 +1,110 @@
 miCallback([
     {
+    "ejerID":"1",
+    "modalID":"1",
     "tipoMuscular":"Pecho",
     "nombre":"Press Banca con Barra",
     "descripcion":"Empuja esas barras",
+    "consejo":"Baja lentamente",
     "series":"3",
     "repeticiones":"8",
     "img": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/barbell-bench-press.jpg"
     },
     {
+    "ejerID":"2",
+    "modalID":"2",
     "tipoMuscular":"Pecho",
     "nombre":"Press Superior con Mancuerna",
     "descripcion":"Empuja esas barras",
+    "consejo":"manten buena postura",
     "series":"3",
     "repeticiones":"8",
     "img": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/Press-superior-mancuernas.png"
     },
     {
+    "ejerID":"3",
+    "modalID":"3",
     "tipoMuscular":"Pecho",
     "nombre":"Aperturas de Pecho",
     "descripcion":"Empuja esas mancuernas",
+    "consejo":"Importante mantener los hombros firmes",
     "series":"5",
     "repeticiones":"10",
     "img": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/aperturasTumbado.png"
     },
     {
+    "ejerID":"4",
+    "modalID":"4",
     "tipoMuscular":"Espalda",
     "nombre":"Remo con Barra",
     "descripcion": "Rema muy fuerte",
+    "consejo":"Muy imporante mantener la espalda recta para evitar lesiones",
     "series":"5",
     "repeticiones":"10",
     "img":"https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/remo%20con%20barra.png"
     },
     {
+    "ejerID":"5",
+    "modalID":"5",
     "tipoMuscular":"Espalda",
     "nombre":"Jalon en Polea",
     "descripcion": "Rompe la polea",
+    "consejo":"Realizar una bajada explosiva y en la vuelta acompañamos la barra sin dar tirones.",
     "series":"5",
     "repeticiones":"10",
     "img":"https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/jalon%20en%20polea.png"
     },
     {
+    "ejerID":"6",
+    "modalID":"6",
     "tipoMuscular":"Espalda",
     "nombre":"Dominadas",
     "descripcion": "Saca tus alas a volar",
+    "consejo":"Si eres iniciado prueba a realizar dominadas negativas.",
     "series":"4",
     "repeticiones":"8",
     "img":"https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/Dominadas.png"
     },   
     {
+    "ejerID":"7",
+    "modalID":"7",
     "tipoMuscular":"Espalda",
     "nombre":"Remo con Mancuerna",
     "descripcion": "Rema más fuerte que antes",
+    "consejo":"Mantenemos el hombro firme y formamos un angulo de 90º entre brazo y antebrazo",
     "series":"5",
     "repeticiones":"10",
     "img":"https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/Remo-con-mancuerna.png"
     },
     {
+    "ejerID":"8",
+    "modalID":"8",
     "tipoMuscular":"Piernas",
     "nombre":"Zancada",
     "descripcion": "Muerte asegurada",
+    "consejo":"Mantener el pie firme en el suelo y sobrepasar ligeramente con la rodilla la punta del pie.",
     "series":"3",
     "repeticiones":"15",
     "img":"https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/Zancada.png"
     },
     {
+    "ejerID":"9",
+    "modalID":"9",
     "tipoMuscular":"Piernas",
     "nombre":"Sentadilla",
     "descripcion": "Buenos gluteos",
+    "consejo":"Colocamos los pies posicionados respecto a los hombros",
     "series":"4",
     "repeticiones":"10",
     "img":"https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/Sentadilla.png"
     },
     {
+    "ejerID":"10",
+    "modalID":"10",
     "tipoMuscular":"Piernas",
     "nombre":"Prensa Inclinada",
     "descripcion": "Empuja por tu vida",
+    "consejo":"La bajada la realizamos lentamente controlando el peso.",
     "series":"5",
     "repeticiones":"12",
     "img":"https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/Prensa.png"
