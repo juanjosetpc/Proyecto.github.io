@@ -1,3 +1,4 @@
+//Abrir y cerrar las filas de misRutinas y rutinasFavoritas
 const titulo = document.getElementById("tituloMisRutinas");
 const titulo2 = document.getElementById("tituloMisFavoritas");
 titulo.style.cursor = "pointer";
@@ -33,8 +34,9 @@ function abrir2() {
 titulo.addEventListener("click", abrir);
 titulo2.addEventListener("click", abrir2);
 
-
-const modalClose = document.getElementById("modalClose");
+//Aparicion de pop up
+const modalClose1 = document.getElementById("modalClose1");
+const modalClose2 = document.getElementById("modalClose2");
 const tituloInput = document.getElementById("tituloInput");
 const descripcion = document.getElementById("descripcion");
 const lunes = document.getElementById("lunes");
@@ -45,8 +47,11 @@ const viernes = document.getElementById("viernes");
 const sabado = document.getElementById("sabado");
 const domingo = document.getElementById("domingo");
 
-modalClose.addEventListener("click", function () {
+modalClose1.addEventListener("click", function () {
     tituloInput.value = ''; descripcion.value = '';
+});
+
+modalClose2.addEventListener("click", function () {
     lunes.checked = false;
     martes.checked = false;
     miercoles.checked = false;
@@ -54,6 +59,9 @@ modalClose.addEventListener("click", function () {
     viernes.checked = false;
     sabado.checked = false;
     domingo.checked = false;
+    //Estas dos lineas eliminan el problema que hacia que al cerrar la pagina se quedara en standby
+    var modalBackdrop = document.querySelector(".modal-backdrop");
+    modalBackdrop.parentNode.removeChild(modalBackdrop);
 });
 
 aceptar.addEventListener("click", crearRutina);

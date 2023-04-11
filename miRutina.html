@@ -69,7 +69,7 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h1 style="color:black;" class="modal-title fs-5" id="staticBackdropLabel">Crear Nueva Rutina</h1>
-                  <button type="button" id="modalClose" class="btn-close" data-bs-dismiss="modal"
+                  <button type="button" id="modalClose1" class="btn-close" data-bs-dismiss="modal"
                     aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -78,11 +78,36 @@
                     <input type="text" class="form-control" id="tituloInput">
                     <label for="tituloInput">Título</label>
                   </div>
-
                   </br>
 
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="descripcion">
+                    <label for="descripcion">Descripción</label>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+
+                  <button id="siguiente" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-dismiss="modal"
+                  data-bs-target="#eligeDia">Siguiente</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="modal fade" id="eligeDia" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
+            aria-labelledby="eligeDiaLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 style="color:black;" class="modal-title fs-5" id="staticBackdropLabel">Crear Nueva Rutina</h1>
+                  <button type="button" id="modalClose2" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
                   <div class="row g-2">
-                    <h6 style="color:black;"> Días</h1>
+                    <h6 style="color:black;"> Elige los días</h1>
                       <div class="col-md">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="lunes">
@@ -132,18 +157,11 @@
                         </div>
                       </div>
                   </div>
-                  </br>
-
-                  <div class="form-floating">
-                    <input type="text" class="form-control" id="descripcion">
-                    <label for="descripcion">Descripción</label>
-                  </div>
-
                 </div>
                 <div class="modal-footer">
 
                   <button id="aceptar" type="button" class="btn btn-primary" data-bs-dismiss="modal"
-                    aria-label="Close">Aceptar</button>
+                  data-bs-target="#eligeDia">Aceptar</button>
                 </div>
               </div>
             </div>
