@@ -9,6 +9,13 @@ const storage = window.localStorage;
 
 continuar.addEventListener('click',authenticate);
 registrar.addEventListener('click',redirect);
+contrasena.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      authenticate();
+    }
+  });
+
 
 function redirect()
 {
