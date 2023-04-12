@@ -41,9 +41,9 @@ var miCallback = datos =>{
         html+= "<div class='card-body d-flex flex-column'>"
         html+= "<h5 class='card-title'>"+ejercicio.nombre+"</h5>";
         html+= "<p class='card-text mb-4'>"+ejercicio.descripcion+"</p>";
-        html+= "<button type='button' class='btn btn-primary mt-auto align-self-start' data-bs-toggle='modal' data-bs-target='#miModal'>Saber Mas</button>";
+        html+= "<button type='button' class='btn btn-primary mt-auto align-self-start' data-bs-toggle='modal' data-bs-target='#"+ejercicio.modalID+"'>Saber Mas</button>";
        
-        html+= "<div class='modal fade' id='miModal' tabindex='-1' aria-hidden='true' aria-labelledby='modalTitle'>";
+        html+= "<div class='modal fade' id='"+ejercicio.modalID+"' tabindex='-1' aria-hidden='true' aria-labelledby='modalTitle'>";
         html+= "<div class='modal-dialog'>";
         html+= "<div class='modal-content'>";
         html+= "<div class='modal-header'>";
@@ -51,7 +51,7 @@ var miCallback = datos =>{
         html+= "<button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>";
         html+= "</div>";
         html+= "<div class='modal-body'>";
-        html+= "<p>En este apartado añadiremos consejos y errores comunes</p>";
+        html+= "<p>"+ejercicio.consejo+"</p>";
         html+= "</div>";
         html+= "<div class='modal-footer'>";
         html+= "<button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Cerrar</button>";

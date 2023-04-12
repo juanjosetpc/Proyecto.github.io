@@ -44,3 +44,8 @@ h3{
     background:#000070;
 }
 
+img{
+    height: auto;
+    width: auto;
+    max-height: 200px;
+}
