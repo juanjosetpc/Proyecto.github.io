@@ -44,7 +44,7 @@ try {
 
 var icon = document.getElementById("icono")
 icon.style.cursor = "pointer"
-icon.style.height = "100%"
+icon.style.height = "86%"
 function togglePassword() {
     var passwordField = document.getElementById("password");
     
