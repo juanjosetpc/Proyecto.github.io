@@ -13,7 +13,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles/rutinaDefectoEnDetalle.css">
 
 
@@ -46,7 +46,7 @@
                         <a class="nav-link" href="miRutina.html">Mis Rutinas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Perfil</a>
+                        <a class="nav-link" href="perfil.html">Perfil</a>
                     </li>
                 </ul>
             </div>
@@ -67,6 +67,61 @@
             <!-- aquí van las cajas desplegables generadas dinámicamente a partir del archivo JSON -->
         </div>
     </div>
+
+    <!--Codigo para el modal de añadir ejercicio, que conectamos con el javascript para ejecutarlo y guardar los datos en la rutina y el dia correspondiente -->
+    <div class="modal fade" id="modalAnadirEjercicio" tabindex="-1" role="dialog"
+        aria-labelledby="modalAnadirEjercicio-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAnadirEjercicio-label">Añadir ejercicio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formAnadirEjercicio">
+                        <div class="mb-3">
+                            <input type="text" id="searchInput" placeholder="Buscar ejercicio..." autocomplete="off"
+                                required>
+                            <ul id="suggestions"></ul>
+                        </div>
+                        <div class="mb-3">
+                            <label for="seriesInput" class="form-label">Series</label>
+                            <input type="number" class="form-control" id="seriesInput" size="10" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="repeticionesInput" class="form-label">Repeticiones</label>
+                            <input type="number" class="form-control" id="repeticionesInput" size="10" required>
+                        </div>
+                        <input type="hidden" id="ejercicioIdInput">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary"
+                                id="btnConfirmarAnadirEjercicio">Confirmar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal para info de cada ejercicio -->
+    <div class='modal fade' id='modal-info-ejercicio' tabindex='-1' aria-hidden='true' aria-labelledby='modalTitle'>
+        <div class='modal-dialog'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title' id='modalTitle'>Consejos y Errores Comunes</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body' id="modal-body-info-ejercicio">
+                    <!--Insertar consejo con js desde jsonp -->
+                </div>
+                <div class='modal-footer'>
+                    <button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 

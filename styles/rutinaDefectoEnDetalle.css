@@ -12,11 +12,16 @@
 .accordion-button,
 .accordion-button:not(.collapsed) {
     display: flex;
+    align-items: center;
     justify-content: center;
     background-color:rgba(44, 44, 44, 1);
     color: #FFFF;
     font-size: 25px;
     box-shadow: none;
+}
+
+.btn-success{
+    font-size: 20px;
 }
 
 .accordion-button:focus {
@@ -50,3 +55,42 @@ body {
     margin-left: 5%;
     color: white;
 }
+
+  #searchInput {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+  }
+  
+  #suggestions {
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  #suggestions li {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  #suggestions li:hover {
+    background-color: #d0caca;
+  }
+  
+.card-header .bi-info-circle-fill {
+    font-size: 1.5rem; 
+    color: #007bff; 
+  }
+
+div .nombre-ejercicio{
+    flex:1;    
+}
+
+div .dropdown{
+    float: right;
+}
+

@@ -10,14 +10,12 @@
                     "dia": "Lunes",
                     "ejercicios": [
                         {
-                            "nombre": "Press de banca",
-                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/aperturasTumbado.png",
+                            "idEjercicio":2,
                             "series": 3,
                             "repeticiones": 10
                         },
                         {
-                            "nombre": "Sentadillas",
-                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/jalon%20en%20polea.png",
+                            "idEjercicio":0,
                             "series": 4,
                             "repeticiones": 8
                         }
@@ -27,14 +25,12 @@
                     "dia":"Martes",
                     "ejercicios":[
                         {
-                            "nombre": "Press de banca",
-                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/aperturasTumbado.png",
+                            "idEjercicio":3,
                             "series": 3,
                             "repeticiones": 10
                           },
                           {
-                            "nombre": "Sentadillas",
-                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/jalon%20en%20polea.png",
+                            "idEjercicio":4,
                             "series": 4,
                             "repeticiones": 8
                           }
@@ -53,14 +49,12 @@
                     "dia": "Lunes",
                     "ejercicios": [
                         {
-                            "nombre": "Press de banca",
-                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/aperturasTumbado.png",
+                            "idEjercicio":2,
                             "series": 3,
                             "repeticiones": 10
                         },
                         {
-                            "nombre": "Sentadillas",
-                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/jalon%20en%20polea.png",
+                            "idEjercicio":3,
                             "series": 4,
                             "repeticiones": 8
                         }
@@ -70,14 +64,12 @@
                     "dia":"Miércoles",
                     "ejercicios":[
                         {
-                            "nombre": "Press de banca",
-                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/aperturasTumbado.png",
+                            "idEjercicio":4,
                             "series": 3,
                             "repeticiones": 10
                           },
                           {
-                            "nombre": "Sentadillas",
-                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/jalon%20en%20polea.png",
+                            "idEjercicio":5,
                             "series": 4,
                             "repeticiones": 8
                           }
@@ -88,14 +80,12 @@
                     "dia":"Viernes",
                     "ejercicios":[
                         {
-                            "nombre": "Press de banca",
-                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/aperturasTumbado.png",
+                            "idEjercicio":6,
                             "series": 3,
                             "repeticiones": 10
                           },
                           {
-                            "nombre": "Sentadillas",
-                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/jalon%20en%20polea.png",
+                            "idEjercicio":7,
                             "series": 4,
                             "repeticiones": 8
                           }
@@ -114,14 +104,12 @@
                     "dia": "Lunes",
                     "ejercicios": [
                         {
-                            "nombre": "Press de banca",
-                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/aperturasTumbado.png",
+                            "idEjercicio":8,
                             "series": 3,
                             "repeticiones": 10
                         },
                         {
-                            "nombre": "Sentadillas",
-                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/jalon%20en%20polea.png",
+                            "idEjercicio":2,
                             "series": 4,
                             "repeticiones": 8
                         }
@@ -131,14 +119,12 @@
                     "dia":"Miércoles",
                     "ejercicios":[
                         {
-                            "nombre": "Press de banca",
-                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/aperturasTumbado.png",
+                            "idEjercicio":3,
                             "series": 3,
                             "repeticiones": 10
                           },
                           {
-                            "nombre": "Sentadillas",
-                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/jalon%20en%20polea.png",
+                            "idEjercicio":9,
                             "series": 4,
                             "repeticiones": 8
                           }
@@ -149,14 +135,12 @@
                     "dia":"Viernes",
                     "ejercicios":[
                         {
-                            "nombre": "Press de banca",
-                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/aperturasTumbado.png",
+                            "idEjercicio":7,
                             "series": 3,
                             "repeticiones": 10
                           },
                           {
-                            "nombre": "Sentadillas",
-                            "imagen": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/jalon%20en%20polea.png",
+                            "idEjercicio":10,
                             "series": 4,
                             "repeticiones": 8
                           }

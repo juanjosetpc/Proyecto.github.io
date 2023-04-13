@@ -103,11 +103,6 @@ function crearRutina() {
         rutina.dias.push({ dia: 'Domingo', ejercicios: [] });
     }
 
-    // const rutina = {
-    //     titulo: tituloInput.value, descripcion: descripcion.value, lunes: lunes.checked, martes: martes.checked, miercoles: miercoles.checked
-    //     , jueves: jueves.checked, viernes: viernes.checked, sabado: sabado.checked, domingo: domingo.checked
-    // };
-
     const user = localStorage.getItem("Logeado");
     var misRutinasNumber = localStorage.getItem(user + "misRutinas");
     misRutinasNumber = parseInt(misRutinasNumber) + 1;
