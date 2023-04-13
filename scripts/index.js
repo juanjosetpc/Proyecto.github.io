@@ -1,4 +1,5 @@
-document.querySelector("#iniciar").addEventListener("click",function () {window.location.href = "InicioSesion.html?"})
+document.querySelector("#iniciar").addEventListener("click",function () {window.location.href = "InicioSesion.html"})
+document.querySelector("#registro").addEventListener("click",function () {window.location.href = "registro.html"})
 
 document.querySelector("#facebook").addEventListener("click",function () {window.location.href = "https://es-es.facebook.com/"})
 document.querySelector("#instagram").addEventListener("click",function () {window.location.href = "https://www.instagram.com/"})

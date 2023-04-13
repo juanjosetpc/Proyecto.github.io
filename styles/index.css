@@ -1,0 +1,38 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+i:hover{
+    cursor: pointer;
+}
+    
+
+.bgimg-1 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url('/images/rutinasDefault/fullbody-banner.jpeg');
+  min-height: 100%;
+}
+
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1{
+    background-attachment: scroll;
+    
+  }
+}
+
+#pumpPower
+{
+    display: block;
+  
+  width: 40%;
+}
