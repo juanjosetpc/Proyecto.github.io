@@ -55,9 +55,16 @@
       </div>
     </div>
 
-   
+  <label for="filtro-dias" id="filtro">Filtrar por días:</label>
+  <select id="filtro-dias">
+    <option value="todos">Todos</option>
+    <option value="3">3 días</option>
+    <option value="4">4 días</option>
+    <option value="6">6 días</option>
+  </select>
+
     <div class="row">
-      <div class="col-12 col-md-4 mb-4 image-container">
+      <div class="col-12 col-md-4 mb-4 image-container" data-dias="4">
         <img id="torso-pierna" src="images/rutinasDefault/torso-pierna.jpeg" alt=""><br />
         <div class="grey-square">
           <a href="rutinaDefaultEnDetalle.html" data-nombreRutina="Torso/Pierna"
@@ -66,7 +73,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-4 mb-4 image-container">
+      <div class="col-12 col-md-4 mb-4 image-container" data-dias="3">
         <img id="fullbody" src="images/rutinasDefault/fullbody.jpeg" alt=""><br />
         <div class="grey-square">
           <a href="rutinaDefaultEnDetalle.html" data-nombreRutina="Full body"
@@ -74,7 +81,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-4 mb-4 image-container">
+      <div class="col-12 col-md-4 mb-4 image-container" data-dias="6">
         <img id="tiron-empuje" src="images/rutinasDefault/tiron-empuje.jpeg" alt=""> <br />
         <div class="grey-square">
           <a href="rutinaDefaultEnDetalle.html" data-nombreRutina="Tirón/Empuje"
@@ -88,7 +95,7 @@
 
 
   <script src="scripts/rutinaDefault.js"></script>
-
+  <script src="scripts/rutinas.js"></script>
 </body>
 
 </html>

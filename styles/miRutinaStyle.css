@@ -30,3 +30,11 @@ body{
     display: none;
     margin: 2%;
 }
+
+.modal-title{
+    color: black;
+}
+
+.h6{
+    color: black;
+}

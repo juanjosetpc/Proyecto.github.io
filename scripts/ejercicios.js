@@ -40,7 +40,7 @@ var miCallback = datos =>{
         html+= "<img src='"+ejercicio.img+"' class='card-img-top' alt='Card Image'></img>";
         html+= "<div class='card-body d-flex flex-column'>"
         html+= "<h5 class='card-title'>"+ejercicio.nombre+"</h5>";
-        html+= "<p class='card-text mb-4'>"+ejercicio.descripcion+"</p>";
+        html+= "<p class='card-text mb-4'>Dificultad</p>";
         html+= "<button type='button' class='btn btn-primary mt-auto align-self-start' data-bs-toggle='modal' data-bs-target='#"+ejercicio.modalID+"'>Saber Mas</button>";
        
         html+= "<div class='modal fade' id='"+ejercicio.modalID+"' tabindex='-1' aria-hidden='true' aria-labelledby='modalTitle'>";
@@ -51,7 +51,12 @@ var miCallback = datos =>{
         html+= "<button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>";
         html+= "</div>";
         html+= "<div class='modal-body'>";
-        html+= "<p>"+ejercicio.consejo+"</p>";
+        html+= "<h6>Antes una breve descripcion:</h6>";
+        html+= "<p>"+ejercicio.descripcion+"</p>";
+        html+= "<h6>Errores habituales: </h6>";
+        html+= "<ul>"+ejercicio.error+"</ul>";
+        html+= "<h6>Consejo clave:</h6>";
+        html+= "<ul>"+ejercicio.consejo+"</ul>";
         html+= "</div>";
         html+= "<div class='modal-footer'>";
         html+= "<button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Cerrar</button>";

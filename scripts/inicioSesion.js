@@ -9,6 +9,13 @@ const storage = window.localStorage;
 
 continuar.addEventListener('click',authenticate);
 registrar.addEventListener('click',redirect);
+contrasena.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      authenticate();
+    }
+  });
+
 
 function redirect()
 {
@@ -44,7 +51,7 @@ try {
 
 var icon = document.getElementById("icono")
 icon.style.cursor = "pointer"
-icon.style.height = "100%"
+icon.style.height = "86%"
 function togglePassword() {
     var passwordField = document.getElementById("password");
     
