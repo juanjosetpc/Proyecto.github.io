@@ -18,8 +18,9 @@ i:hover{
 }
 
 .bgimg-1 {
-  background-image: url('/images/rutinasDefault/fullbody-banner.jpeg');
+  background-image: url('/images/landpage.jpg');
   min-height: 100%;
+  
 }
 
 
@@ -33,6 +34,32 @@ i:hover{
 #pumpPower
 {
     display: block;
+    
   
-  width: 40%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+
+#iniciar
+{
+  margin: 5%;
+  margin-top: 10%;
+}
+
+#registro
+{
+  margin: 5%;
+  margin-top: 10%;
+  
+}
+
+#texto
+{
+  font-family:serif;
+  font-size: 400%;
+  color:beige;
+  margin: 10%;
+
+}
+
