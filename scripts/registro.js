@@ -26,9 +26,21 @@ function guardarUser()
     const telefonoInput = telefono.value;
 
     
-    if(user==null || user=="" || contrasena==null || contrasena=="" || contrasena.length <= 6)
+    if(user==null || user==""  )
     {
-        alert("Introduzca correctamente los datos.");
+        alert("Campo Usuario no completado");
+    }
+    else if(storage.getItem(user) != null)
+    {
+      alert("Ya existe ese Usuario.");
+    }
+    else if(contrasena==null || contrasena=="")
+    {
+      alert("Campo Contraseña no completado");
+    }
+    else if(contrasena.length <= 6)
+    {
+      alert("La Longitud de la Contraseña tiene que ser mayor que 6.");
     }
     else
     {
