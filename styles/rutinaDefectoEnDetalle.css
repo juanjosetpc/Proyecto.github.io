@@ -17,16 +17,13 @@
     background-color:rgba(44, 44, 44, 1);
     color: #FFFF;
     font-size: 25px;
-    box-shadow: none;
 }
 
 .btn-success{
     font-size: 20px;
 }
 
-.accordion-button:focus {
-    box-shadow: none;
-}
+
 .accordion-button{
     width: 50%;
 }
