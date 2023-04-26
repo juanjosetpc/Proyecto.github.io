@@ -66,7 +66,8 @@ function guardar()
 
     if(contrasena==null || contrasena=="" || contrasena.length <= 6)
     {
-        alert("Introduzca correctamente los datos.");
+        alert("La Longitud de la Contraseña tiene que ser mayor que 6.");
+        
     }
     else
     {
@@ -79,6 +80,7 @@ function guardar()
         location.reload();
        
     }
+    location.reload();
 }
 
 var icon = document.getElementById("icono")

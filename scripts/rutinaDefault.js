@@ -58,10 +58,11 @@ favo.addEventListener("click", function() {
       content: 'Eliminado de mis rutinas favoritas',
       placement: 'top',
       trigger: 'focus'
-    });
+    }); 
 
   }
 
+  
   $(favo).popover('show');
   setTimeout(function() {
     $(favo).popover('dispose');
