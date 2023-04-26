@@ -75,6 +75,8 @@ function crearRutina() {
         dias: []
     };
 
+    
+
     if (lunes.checked) {
         rutina.dias.push({ dia: 'Lunes', ejercicios: [] });
     }
@@ -103,12 +105,25 @@ function crearRutina() {
         rutina.dias.push({ dia: 'Domingo', ejercicios: [] });
     }
 
+    if(rutina.titulo == null || rutina.titulo == "")
+    {
+        alert("Campo Título Vacío");
+    }
+    else if(rutina.dias.length == 0)
+    {
+        alert("No hay días seleccionados");
+    }
+    else
+    {
     const user = localStorage.getItem("Logeado");
     var misRutinasNumber = localStorage.getItem(user + "misRutinas");
     misRutinasNumber = parseInt(misRutinasNumber) + 1;
     storage.setItem(user + "misRutinas", misRutinasNumber);
 
     localStorage.setItem(user + "rutinaMia" + misRutinasNumber, JSON.stringify(rutina));
+    }
+
+    
     tituloInput.value = ''; descripcion.value = '';
     lunes.checked = false;
     martes.checked = false;
