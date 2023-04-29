@@ -1,32 +1,100 @@
 {
-        "div": {
-          "class":"col-12 col-md-4 mb-4 image-container",
-          "data-dias": "3",
-          "children": [
-            {
-              "img": {
-                "id": "fullbody",
-                "src": "images/rutinasDefault/fullbody.jpeg",
-                "alt": ""
-              }
-            },
-            {
-              "div": {
-                "class": "grey-square",
-                "children": [
-                  {
-                    "a": {
-                      "href": "rutinaDefaultEnDetalle.html",
-                      "data-nombreRutina": "Full body",
-                      "data-urlImagen": "images/rutinasDefault/fullbody-banner.jpeg",
-                      "data-idRutina": "1",
-                      "class": "miEnlace",
-                      "text": "Full body (3 días a la semana)"
-                    }
-                  }
-                ]
-              }
+  "rutinas":[
+    {
+      "div": {
+        "class":"col-12 col-md-4 mb-4 image-container",
+        "data-dias": "4",
+        "children": [
+          {
+            "img": {
+              "id": "torso-pierna",
+              "src": "images/rutinasDefault/torso-pierna.jpeg",
+              "alt": ""
             }
-          ]
-        }
+          },
+          {
+            "div": {
+              "class": "grey-square",
+              "children": [
+                {
+                  "a": {
+                    "href": "rutinaDefaultEnDetalle.html",
+                    "data-nombreRutina": "Torso/Pierna",
+                    "data-urlImagen": "images/rutinasDefault/torso-pierna-banner.jpeg",
+                    "data-idRutina": "0",
+                    "class": "miEnlace",
+                    "text": "Torso-Pierna (4 días a la semana)"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "div": {
+        "class":"col-12 col-md-4 mb-4 image-container",
+        "data-dias": "3",
+        "children": [
+          {
+            "img": {
+              "id": "fullbody",
+              "src": "images/rutinasDefault/fullbody.jpeg",
+              "alt": ""
+            }
+          },
+          {
+            "div": {
+              "class": "grey-square",
+              "children": [
+                {
+                  "a": {
+                    "href": "rutinaDefaultEnDetalle.html",
+                    "data-nombreRutina": "Full body",
+                    "data-urlImagen": "images/rutinasDefault/fullbody-banner.jpeg",
+                    "data-idRutina": "1",
+                    "class": "miEnlace",
+                    "text": "Full body (3 días a la semana)"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "div": {
+        "class":"col-12 col-md-4 mb-4 image-container",
+        "data-dias": "6",
+        "children": [
+          {
+            "img": {
+              "id": "tiron-empuje",
+              "src": "images/rutinasDefault/tiron-empuje.jpeg",
+              "alt": ""
+            }
+          },
+          {
+            "div": {
+              "class": "grey-square",
+              "children": [
+                {
+                  "a": {
+                    "href": "rutinaDefaultEnDetalle.html",
+                    "data-nombreRutina": "Tirón/Empuje",
+                    "data-urlImagen": "images/rutinasDefault/tiron-empuje-banner.jpeg",
+                    "data-idRutina": "2",
+                    "class": "miEnlace",
+                    "text": "Tiron-Empuje (6 días a la semana)"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
 }

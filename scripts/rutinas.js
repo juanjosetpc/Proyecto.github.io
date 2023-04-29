@@ -1,41 +1,44 @@
-// Define la URL del archivo JSON o la API que devuelve el JSON
-const url = "../ficheros%20json/rutinasPrevia.json";
+// Obtener el contenedor de las rutinas
+const rutinasContainer = document.getElementById('rutinas-container');
 
-// Realiza una petición fetch() para obtener el JSON
-fetch(url)
-  .then(response => response.json())
-  .then(miJson => {
-    // Obtén el elemento contenedor
-    const divPrincipal = document.getElementById("container");
-    divPrincipal.className = miJson.div.class;
-    divPrincipal.setAttribute("data-dias", miJson.div["data-dias"]);
+// Obtener los datos JSON mediante la función fetch
+fetch('../ficheros%20json/rutinasPrevia.json')
+  .then(response => response.json()) // Parsear la respuesta como JSON
+  .then(data => {
+    // Recorrer las rutinas y crear los elementos HTML correspondientes
+    data.rutinas.forEach(rutina => {
+      // Crear el div principal
+      const div = document.createElement('div');
+      div.className = rutina.div.class;
+      div.setAttribute('data-dias', rutina.div['data-dias']);
 
-    // Crea el elemento "img" y agrega los atributos correspondientes
-    const imagen = document.createElement("img");
-    imagen.id = miJson.div.children[0].img.id;
-    imagen.src = miJson.div.children[0].img.src;
-    imagen.alt = miJson.div.children[0].img.alt;
-    divPrincipal.appendChild(imagen);
+      // Crear la imagen
+      const img = document.createElement('img');
+      img.id = rutina.div.children[0].img.id;
+      img.src = rutina.div.children[0].img.src;
+      img.alt = rutina.div.children[0].img.alt;
+      div.appendChild(img);
 
-    // Crea el elemento "div" secundario y agrega los atributos correspondientes
-    const divSecundario = document.createElement("div");
-    divSecundario.className = miJson.div.children[1].div.class;
+      // Crear el div gris
+      const divGris = document.createElement('div');
+      divGris.className = rutina.div.children[1].div.class;
 
-    // Crea el elemento "a" y agrega los atributos correspondientes
-    const anclaje = document.createElement("a");
-    anclaje.href = miJson.div.children[1].div.children[0].a.href + '?idRutina=' + miJson.div.children[1].div.children[0].a['data-idRutina'] + '&nombreRutina=' + encodeURIComponent(miJson.div.children[1].div.children[0].a['data-nombreRutina']) + '&urlImagen=' + miJson.div.children[1].div.children[0].a['data-urlImagen'];
-    anclaje.setAttribute("data-nombreRutina", miJson.div.children[1].div.children[0].a["data-nombreRutina"]);
-    anclaje.setAttribute("data-urlImagen", miJson.div.children[1].div.children[0].a["data-urlImagen"]);
-    anclaje.setAttribute("data-idRutina", miJson.div.children[1].div.children[0].a["data-idRutina"]);
-    anclaje.className = miJson.div.children[1].div.children[0].a.class;
-    anclaje.textContent = miJson.div.children[1].div.children[0].a.text;
+      // Crear el enlace
+      const a = document.createElement('a');
+      a.href = rutina.div.children[1].div.children[0].a.href + '?idRutina=' + rutina.div.children[1].div.children[0].a['data-idRutina'] + '&nombreRutina=' + encodeURIComponent(rutina.div.children[1].div.children[0].a['data-nombreRutina']) + '&urlImagen=' + rutina.div.children[1].div.children[0].a['data-urlImagen'];
+      a.setAttribute('data-nombreRutina', rutina.div.children[1].div.children[0].a['data-nombreRutina']);
+      a.setAttribute('data-urlImagen', rutina.div.children[1].div.children[0].a['data-urlImagen']);
+      a.setAttribute('data-idRutina', rutina.div.children[1].div.children[0].a['data-idRutina']);
+      a.className = rutina.div.children[1].div.children[0].a.class;
+      a.innerText = rutina.div.children[1].div.children[0].a.text;
+      divGris.appendChild(a);
 
-    // Agrega el elemento "a" al elemento "div" secundario
-    divSecundario.appendChild(anclaje);
+      // Agregar el div gris al div principal
+      div.appendChild(divGris);
 
-    // Agrega el elemento "div" secundario al "div" principal
-    divPrincipal.appendChild(divSecundario);
-
+      // Agregar el div principal al contenedor de rutinas
+      rutinasContainer.appendChild(div);
+    });
   })
   .catch(error => console.error(error));
 //---------------------------------------------------------------------------------
