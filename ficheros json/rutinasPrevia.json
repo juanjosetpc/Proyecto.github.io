@@ -1,0 +1,32 @@
+{
+        "div": {
+          "class":"col-12 col-md-4 mb-4 image-container",
+          "data-dias": "3",
+          "children": [
+            {
+              "img": {
+                "id": "fullbody",
+                "src": "images/rutinasDefault/fullbody.jpeg",
+                "alt": ""
+              }
+            },
+            {
+              "div": {
+                "class": "grey-square",
+                "children": [
+                  {
+                    "a": {
+                      "href": "rutinaDefaultEnDetalle.html",
+                      "data-nombreRutina": "Full body",
+                      "data-urlImagen": "images/rutinasDefault/fullbody-banner.jpeg",
+                      "data-idRutina": "1",
+                      "class": "miEnlace",
+                      "text": "Full body (3 días a la semana)"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+}
