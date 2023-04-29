@@ -55,6 +55,7 @@ function mostrarRutina() {
         btn.setAttribute('data-bs-target', `#dia-${index}`);
         btn.setAttribute('aria-expanded', 'true');
         btn.setAttribute('aria-controls', `#dia-${index}`);
+        btn.setAttribute('aria-label', 'boton para desplegar la lista de ejercicios del dia ' + dia.dia);
         btn.textContent = dia.dia;
 
         const collapse = document.createElement('div');
@@ -92,6 +93,7 @@ function mostrarRutina() {
           // Crear botón de ayuda
           const ayudaButton = document.createElement('button');
           ayudaButton.classList.add('btn', 'btn-link');
+          ayudaButton.setAttribute('aria-label', 'obtener informacion del ejercicio');
           ayudaButton.innerHTML = '<i class="bi bi-info-circle-fill"></i>';
           ayudaButton.addEventListener('click', () => {
             const consejo = arrayEjerciciosJson[ejercicio.idEjercicio].consejo;
@@ -117,6 +119,7 @@ function mostrarRutina() {
           const imagen = document.createElement('img');
           imagen.classList.add('img-fluid', 'rounded');
           imagen.setAttribute('src', arrayEjerciciosJson[ejercicio.idEjercicio].img);
+          imagen.setAttribute('alt', "imagen de ejercicio " + arrayEjerciciosJson[ejercicio.idEjercicio].nombre);
 
           const series = document.createElement('p');
           series.textContent = `Series: ${ejercicio.series}`;
@@ -168,6 +171,7 @@ function mostrarRutina2() {
     btn.setAttribute('data-bs-target', `#dia-${index}`);
     btn.setAttribute('aria-expanded', 'true');
     btn.setAttribute('aria-controls', `#dia-${index}`);
+    btn.setAttribute('aria-label', 'boton para desplegar la lista de ejercicios del dia ' + dia.dia);
     btn.textContent = dia.dia;
 
     const collapse = document.createElement('div');
@@ -217,6 +221,7 @@ function mostrarRutina2() {
         // Crear botón de ayuda
         const ayudaButton = document.createElement('button');
         ayudaButton.classList.add('btn', 'btn-link');
+        ayudaButton.setAttribute('aria-label', 'obtener informacion del ejercicio');
         ayudaButton.innerHTML = '<i class="bi bi-info-circle-fill"></i>';
         ayudaButton.addEventListener('click', () => {
           const consejo = arrayEjerciciosJson[ejercicio.idEjercicio - 1].consejo;
@@ -285,6 +290,8 @@ function mostrarRutina2() {
         const imagen = document.createElement('img');
         imagen.classList.add('img-fluid', 'rounded');
         imagen.setAttribute('src', arrayEjerciciosJson[ejercicio.idEjercicio - 1].img);
+        imagen.setAttribute('alt', "imagen de ejercicio " + arrayEjerciciosJson[ejercicio.idEjercicio-1].nombre);
+
 
         const series = document.createElement('p');
         series.textContent = `Series: ${ejercicio.series}`;
