@@ -50,13 +50,13 @@ function guardarUser()
         storage.setItem(user+"misRutinas",0);
         storage.setItem(user+"favoritas", JSON.stringify([]));
     
-        window.location.href = "/InicioSesion.html";
+        window.location.href = "InicioSesion.html";
     }
 }
 
 function volverInicio()
 {
-    window.location.href = "/InicioSesion.html";
+    window.location.href = "InicioSesion.html";
 }
 
 var icon = document.getElementById("icono")
