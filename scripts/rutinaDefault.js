@@ -70,25 +70,3 @@ favo.addEventListener("click", function() {
   
 });
 
-//--------------------------------------------------------------------------------------------
-
-// const dia = document.getElementById("tituloDias");
-// dia.style.cursor = "pointer";
-// var i = 0;
-
-// function abrir(){
-//   const padre = document.getElementById("Dias");
-//   if(i == 0){
-//       i++;
-//       padre.style.marginBottom = "30%";
-//       padre.style.height = "30%";
-//       dia.innerHTML = "Lunes <svg xmlns='http://www.w3.org/2000/svg' width='30' height='20' fill='currentColor' class='bi bi-chevron-up' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/></svg>";
-//   }else{
-//       i--;
-//       padre.style.marginBottom = "0.2%";
-//       padre.style.height = "0%";
-//       dia.innerHTML = "Lunes <svg xmlns='http://www.w3.org/2000/svg' width='30' height='20' fill='currentColor' class='bi bi-chevron-down' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>";
-//   }
-// }
-
-// dia.addEventListener("click",abrir);

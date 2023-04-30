@@ -4,7 +4,7 @@
             "id": 0,
             "nombre": "Torso/Pierna",
             "descripcion": "Rutina equilibrada para conseguir resultados con 4 días a la semana",
-            "banner": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces.github.io/gh-pages/images/rutinasDefault/torso-pierna-banner.jpeg",
+            "banner": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/rutinasDefault/torso-pierna-banner.jpeg",
             "dias": [
                 {
                     "dia": "Lunes",
@@ -43,7 +43,7 @@
             "id": 1,
             "nombre": "Full Body",
             "descripcion": "Rutina para mantenerte activo y saludable con 3 días a la semana",
-            "banner": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces.github.io/gh-pages/images/rutinasDefault/fullbody-banner.jpeg",
+            "banner": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/rutinasDefault/fullbody-banner.jpeg",
             "dias": [
                 {
                     "dia": "Lunes",
@@ -98,7 +98,7 @@
             "id": 2,
             "nombre": "Tiron/Empuje",
             "descripcion": "Rutina para los más exigentes, 6 días a la semana",
-            "banner": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces.github.io.github.io/gh-pages/images/rutinasDefault/tiron-empuje-banner.jpeg",
+            "banner": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/rutinasDefault/tiron-empuje-banner.jpeg",
             "dias": [
                 {
                     "dia": "Lunes",

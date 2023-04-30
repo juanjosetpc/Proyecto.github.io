@@ -2,7 +2,7 @@
 const rutinasContainer = document.getElementById('rutinas-container');
 
 // Obtener los datos JSON mediante la función fetch
-fetch('../ficheros%20json/rutinasPrevia.json')
+fetch('https://github.com/juanjosetpc/ProyectoInterfaces.github.io/blob/gh-pages/ficheros%20json/rutinasPrevia.json')
   .then(response => response.json()) // Parsear la respuesta como JSON
   .then(data => {
     // Recorrer las rutinas y crear los elementos HTML correspondientes
