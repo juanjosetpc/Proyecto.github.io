@@ -38,8 +38,8 @@ function mostrarRutina() {
   //----------Carga el icono en blanco si el usuario tiene la rutina en favorita-----------
 
   //----------Crea el contenido dinamicamente (desplegables y tarjetas con los ejercicios)--------
-  fetch('../ficheros%20json/rutinas.json')
-    .then(response => response.json())
+  fetch('https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces.github.io/gh-pages/ficheros%20json/rutinas.json')
+  .then(response => response.json())
     .then(data => {
       const rutinaAccordion = document.getElementById('rutinaAccordion');
       data.rutinas[rutinaID].dias.forEach((dia, index) => {
