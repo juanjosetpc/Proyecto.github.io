@@ -6,7 +6,8 @@ function miCallback(data) {
 }
 // Hacer la solicitud JSONP
 const script = document.createElement('script');
-script.src = 'https://juanjosetpc.github.io/pumppower.github.io/ficheros%20json/listaEjercicios.jsonp';
+script.src = 'https://juanjosetpc.github.io/PumpPower.github.io/ficheros%20json/listaEjercicios.jsonp';
+script.async = true;
 document.head.appendChild(script);
 
 const parameters = new URLSearchParams(window.location.search);
