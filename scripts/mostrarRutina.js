@@ -6,8 +6,7 @@ function miCallback(data) {
 }
 // Hacer la solicitud JSONP
 const script = document.createElement('script');
-script.src = '../ficheros%20json/rutinas.json';
-
+script.src = '../ficheros%20json/listaEjercicios.jsonp';
 script.async = true;
 document.head.appendChild(script);
 
