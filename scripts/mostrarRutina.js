@@ -6,7 +6,8 @@ function miCallback(data) {
 }
 // Hacer la solicitud JSONP
 const script = document.createElement('script');
-script.src = '../ficheros%20json/listaEjercicios.jsonp';
+script.src = "https://juanjosetpc.github.io/Proyecto.github.io/ficheros%20json/listaEjercicios.jsonp"
+script.async = true;
 document.head.appendChild(script);
 
 const parameters = new URLSearchParams(window.location.search);
@@ -38,8 +39,8 @@ function mostrarRutina() {
   //----------Carga el icono en blanco si el usuario tiene la rutina en favorita-----------
 
   //----------Crea el contenido dinamicamente (desplegables y tarjetas con los ejercicios)--------
-  fetch('../ficheros%20json/rutinas.json')
-    .then(response => response.json())
+  fetch('https://raw.githubusercontent.com/juanjosetpc/pumpower.github.io/gh-pages/ficheros%20json/rutinas.json')
+  .then(response => response.json())
     .then(data => {
       const rutinaAccordion = document.getElementById('rutinaAccordion');
       data.rutinas[rutinaID].dias.forEach((dia, index) => {

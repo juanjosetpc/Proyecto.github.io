@@ -19,7 +19,7 @@ contrasena.addEventListener("keydown", function(event) {
 
 function redirect()
 {
-    window.location.href = "/registro.html";
+    window.location.href = "registro.html";
 }
 
 function authenticate()
