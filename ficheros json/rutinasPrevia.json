@@ -4,6 +4,7 @@
       "div": {
         "class":"col-12 col-md-4 mb-4 image-container",
         "data-dias": "4",
+        "data-dificult":"alta",
         "children": [
           {
             "img": {
@@ -36,6 +37,7 @@
       "div": {
         "class":"col-12 col-md-4 mb-4 image-container",
         "data-dias": "3",
+        "data-dificult":"baja",
         "children": [
           {
             "img": {
@@ -68,6 +70,7 @@
       "div": {
         "class":"col-12 col-md-4 mb-4 image-container",
         "data-dias": "6",
+        "data-dificult":"media",
         "children": [
           {
             "img": {

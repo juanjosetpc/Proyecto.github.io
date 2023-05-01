@@ -44,6 +44,25 @@ a.miEnlace {
     color: white;
 }
 
+#filtros{
+    background-color: #69737B;
+}
+
 #filtro-dias{
     margin-bottom: 2%;
+    width: 12%;
+}
+
+#filtro-dificult{
+    width: 23%;
+}
+
+.filtro {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 2%;
+}
+
+#filtrar{
+    margin-bottom: 0.5%;
 }

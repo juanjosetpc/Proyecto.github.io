@@ -11,6 +11,7 @@ fetch('../ficheros%20json/rutinasPrevia.json')
       const div = document.createElement('div');
       div.className = rutina.div.class;
       div.setAttribute('data-dias', rutina.div['data-dias']);
+      div.setAttribute('data-dificult', rutina.div['data-dificult']);
 
       // Crear la imagen
       const img = document.createElement('img');
@@ -42,20 +43,28 @@ fetch('../ficheros%20json/rutinasPrevia.json')
   })
   .catch(error => console.error(error));
 //---------------------------------------------------------------------------------
-const select = document.getElementById('filtro-dias');
+const filtroDias = document.getElementById('filtro-dias');
+const filtroDificultad = document.getElementById('filtro-dificult');
+const botonFiltrar = document.getElementById('filtrar');
 const elementos = document.getElementsByClassName('image-container');
 
-select.addEventListener('change', (e) => {
-  const valor = e.target.value;
+function filtrar(){
+  const diasSeleccionados = filtroDias.value;
+  const dificultadSeleccionada = filtroDificultad.value;
   
   for (let i = 0; i < elementos.length; i++) {
     const dias = elementos[i].getAttribute('data-dias');
+    const dificult = elementos[i].getAttribute('data-dificult');
     
-    if (valor === 'todos' || dias === valor) {
+    if ((diasSeleccionados == 'todos' && dificultadSeleccionada == 'todos') || (diasSeleccionados == dias && dificultadSeleccionada == 'todos')
+     || (diasSeleccionados == 'todos' && dificultadSeleccionada == dificult) || (diasSeleccionados == dias && dificultadSeleccionada == dificult)) {
       elementos[i].style.display = 'block';
     } else {
       elementos[i].style.display = 'none';
     }
   }
-});
+}
+
+// Asignar la función "filtrar" al botón "Filtrar"
+botonFiltrar.addEventListener('click', filtrar);
 

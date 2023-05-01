@@ -55,14 +55,30 @@
       </div>
     </div>
 
-  <label for="filtro-dias" id="filtro">Filtrar por días:</label>
-  <select id="filtro-dias">
+    <br/>
+
+  <div id="filtros">
+    <label for="filtro-dias" id="filtro" class="filtro">Días:</label>
+  <select id="filtro-dias" class="filtro form-select">
     <option value="todos">Todos</option>
     <option value="3">3 días</option>
     <option value="4">4 días</option>
     <option value="6">6 días</option>
     <option value="7">7 días</option>
   </select>
+  
+  <label for="filtro-dificult" id="filtro" class="filtro">Dificultad:</label>
+  <select id="filtro-dificult" class="filtro form-select">
+    <option value="todos">Todas las dificultades</option>
+    <option value="alta">Dificultad Alta</option>
+    <option value="media">Dificultad Media</option>
+    <option value="baja">Dificultad Baja</option>
+  </select>
+
+  <button id="filtrar" class="btn btn-outline-light">Filtrar</button>
+
+  </div>
+<br/>
 
     <div id="rutinas-container" class="row">
     </div>
