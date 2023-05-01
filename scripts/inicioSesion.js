@@ -19,7 +19,7 @@ contrasena.addEventListener("keydown", function(event) {
 
 function redirect()
 {
-    window.location.href = "registro.html";
+    window.location.href = "./registro.html";
 }
 
 function authenticate()
@@ -38,7 +38,7 @@ try {
 
     if(contrasena1==contrasena2 && contrasena1 != "")
     {
-        window.location.href = "Inicio.html" ;
+        window.location.href = "./Inicio.html" ;
         storage.setItem("Logeado",user1)
     }
     else
