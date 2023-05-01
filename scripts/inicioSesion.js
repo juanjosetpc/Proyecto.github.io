@@ -38,7 +38,7 @@ try {
 
     if(contrasena1==contrasena2 && contrasena1 != "")
     {
-        window.location.href = "./Inicio.html" ;
+        window.location.href = "./ejercicios.html" ;
         storage.setItem("Logeado",user1)
     }
     else
