@@ -54,9 +54,13 @@ var miCallback = datos =>{
         html+= "<h6>Antes una breve descripcion:</h6>";
         html+= "<p>"+ejercicio.descripcion+"</p>";
         html+= "<h6>Errores habituales: </h6>";
-        html+= "<ul>"+ejercicio.error+"</ul>";
+        html+= "<ul>";
+        html+= "<li>"+ejercicio.error+"</li>";
+        html+= "</ul>";
         html+= "<h6>Consejo clave:</h6>";
-        html+= "<ul>"+ejercicio.consejo+"</ul>";
+        html+= "<ul>";
+        html+= "<li>"+ejercicio.consejo+"</li>";
+        html+= "</ul>";
         html+= "</div>";
         html+= "<div class='modal-footer'>";
         html+= "<button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Cerrar</button>";
