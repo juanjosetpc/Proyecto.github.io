@@ -19,8 +19,6 @@ function mostrarRutina() {
   const titulo = parameters.get('nombreRutina');
   const imagen = parameters.get('urlImagen');
 
-  // document.getElementById("tituloDelHTML").textContent = "Rutina por defecto | " + titulo;
-
   // Mostrar el título en la página
   const tituloElement = document.getElementById('nombreRutina');
   tituloElement.textContent = titulo;
@@ -168,8 +166,6 @@ function mostrarRutina2() {
   const tituloElement = document.getElementById('nombreRutina');
   tituloElement.textContent = miRutina.titulo;
   tituloElement.setAttribute("tabindex",0);
-
-  // document.getElementById("tituloDelHTML").textContent = "Mi rutina personalizada | " + miRutina.titulo;
 
 
   // ----------Crea el contenido dinamicamente (desplegables y tarjetas con los ejercicios)--------
@@ -428,6 +424,12 @@ function buscadorEjercicios() {
         li.textContent = exercise.nombre;
         li.ariaLabel = exercise.nombre;
         li.tabIndex = 0;
+        li.addEventListener('keypress', e => {
+          if (e.key === 'Enter') {
+            e.preventDefault(); 
+            li.click(); 
+          }
+        });
         li.addEventListener('click', () => {
           searchInput.value = exercise.nombre;
           idEjercicio.value = exercise.ejerID;
@@ -447,4 +449,5 @@ function buscadorEjercicios() {
     }
   });
 }
+
 
