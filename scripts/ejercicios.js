@@ -37,17 +37,17 @@ var miCallback = datos =>{
         html+= "<div class='col-lg-4 mb-3 d-flex align-items-stretch' category ='"+ejercicio.tipoMuscular+"'>";
         html+= "<div class='col' category ='"+ejercicio.tipoMuscular+"'>";
         html+= "<div class='card h-100'>";
-        html+= "<img src='"+ejercicio.img+"' class='card-img-top' alt='Card Image'></img>";
+        html+= "<img src='"+ejercicio.img+"' class='card-img-top' alt='Imagen de ejercicio "+ejercicio.nombre+"'></img>";
         html+= "<div class='card-body d-flex flex-column'>"
         html+= "<h5 class='card-title'>"+ejercicio.nombre+"</h5>";
         html+= "<p class='card-text mb-4'>Dificultad</p>";
         html+= "<button type='button' class='btn btn-primary mt-auto align-self-start' data-bs-toggle='modal' data-bs-target='#"+ejercicio.modalID+"'>Saber Mas</button>";
        
-        html+= "<div class='modal fade' id='"+ejercicio.modalID+"' tabindex='-1' aria-hidden='true' aria-labelledby='modalTitle'>";
+        html+= "<div class='modal fade' id='"+ejercicio.modalID+"' tabindex='-1' aria-hidden='true' aria-labelledby='modalTitle"+ejercicio.modalID+"'>";
         html+= "<div class='modal-dialog'>";
         html+= "<div class='modal-content'>";
         html+= "<div class='modal-header'>";
-        html+= "<h5 class='modal-title' id='modalTitle'>Consejos y Errores Comunes</h5>";
+        html+= "<h5 class='modal-title' id='modalTitle"+ejercicio.modalID+"'>Consejos y Errores Comunes</h5>";
         html+= "<button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>";
         html+= "</div>";
         html+= "<div class='modal-body'>";
