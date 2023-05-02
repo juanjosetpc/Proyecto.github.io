@@ -19,7 +19,7 @@ function mostrarRutina() {
   const titulo = parameters.get('nombreRutina');
   const imagen = parameters.get('urlImagen');
 
-  document.getElementById("tituloDelHTML").textContent = "Rutina por defecto | " + titulo;
+  // document.getElementById("tituloDelHTML").textContent = "Rutina por defecto | " + titulo;
 
   // Mostrar el título en la página
   const tituloElement = document.getElementById('nombreRutina');
@@ -169,7 +169,7 @@ function mostrarRutina2() {
   tituloElement.textContent = miRutina.titulo;
   tituloElement.setAttribute("tabindex",0);
 
-  document.getElementById("tituloDelHTML").textContent = "Mi rutina personalizada | " + miRutina.titulo;
+  // document.getElementById("tituloDelHTML").textContent = "Mi rutina personalizada | " + miRutina.titulo;
 
 
   // ----------Crea el contenido dinamicamente (desplegables y tarjetas con los ejercicios)--------
