@@ -10,7 +10,7 @@
             "img": {
               "id": "torso-pierna",
               "src": "images/rutinasDefault/torso-pierna.jpeg",
-              "alt": ""
+              "alt": "Rutina de Torso y Pierna de 4 días y dibicultad alta"
             }
           },
           {
@@ -43,7 +43,7 @@
             "img": {
               "id": "fullbody",
               "src": "images/rutinasDefault/fullbody.jpeg",
-              "alt": ""
+              "alt": "Rutina Cuerpo completo de 3 días y dificultad baja"
             }
           },
           {
@@ -76,7 +76,7 @@
             "img": {
               "id": "tiron-empuje",
               "src": "images/rutinasDefault/tiron-empuje.jpeg",
-              "alt": ""
+              "alt": "Rtuina de Tiron y Empuje de 6 días y dificultad media"
             }
           },
           {

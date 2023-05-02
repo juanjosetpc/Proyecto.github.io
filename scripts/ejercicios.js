@@ -36,11 +36,11 @@ var miCallback = datos =>{
     app.listaEjercicios.map(ejercicio => { 
         html+= "<div class='col-lg-4 mb-3 d-flex align-items-stretch' category ='"+ejercicio.tipoMuscular+"'>";
         html+= "<div class='col' category ='"+ejercicio.tipoMuscular+"'>";
-        html+= "<div class='card h-100'>";
-        html+= "<img src='"+ejercicio.img+"' class='card-img-top' alt='Imagen de ejercicio "+ejercicio.nombre+"'></img>";
+        html+= "<div class='card h-100' tabindex='0'>";
+        html+= "<h4 class='card-title'>"+ejercicio.nombre+"</h4>";
         html+= "<div class='card-body d-flex flex-column'>"
-        html+= "<h5 class='card-title'>"+ejercicio.nombre+"</h5>";
         html+= "<p class='card-text mb-4'>Dificultad</p>";
+        html+= "<img src='"+ejercicio.img+"' class='card-img-top' alt='Imagen de ejercicio "+ejercicio.nombre+" longdesc='longdesc.txt''></img>";
         html+= "<button type='button' class='btn btn-primary mt-auto align-self-start' data-bs-toggle='modal' data-bs-target='#"+ejercicio.modalID+"'>Saber Mas</button>";
        
         html+= "<div class='modal fade' id='"+ejercicio.modalID+"' tabindex='-1' aria-hidden='true' aria-labelledby='modalTitle"+ejercicio.modalID+"'>";
@@ -54,9 +54,13 @@ var miCallback = datos =>{
         html+= "<h6>Antes una breve descripcion:</h6>";
         html+= "<p>"+ejercicio.descripcion+"</p>";
         html+= "<h6>Errores habituales: </h6>";
-        html+= "<ul>"+ejercicio.error+"</ul>";
+        html+= "<ul>";
+        html+= "<li>"+ejercicio.error+"</li>";
+        html+= "</ul>";
         html+= "<h6>Consejo clave:</h6>";
-        html+= "<ul>"+ejercicio.consejo+"</ul>";
+        html+= "<ul>";
+        html+= "<li>"+ejercicio.consejo+"</li>";
+        html+= "</ul>";
         html+= "</div>";
         html+= "<div class='modal-footer'>";
         html+= "<button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Cerrar</button>";
