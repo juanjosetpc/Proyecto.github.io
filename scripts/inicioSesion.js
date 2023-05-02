@@ -19,7 +19,7 @@ contrasena.addEventListener("keydown", function(event) {
 
 function redirect()
 {
-    window.location.href = "registro.html";
+    window.location.href = "./registro.html";
 }
 
 function authenticate()
@@ -38,7 +38,7 @@ try {
 
     if(contrasena1==contrasena2 && contrasena1 != "")
     {
-        window.location.href = "Inicio.html" ;
+        window.location.href = "./ejercicios.html" ;
         storage.setItem("Logeado",user1)
     }
     else
@@ -53,7 +53,7 @@ var icon = document.getElementById("icono")
 icon.style.cursor = "pointer"
 icon.style.height = "86%"
 function togglePassword() {
-    var passwordField = document.getElementById("password");
+    var passwordField = document.getElementById("contrasena");
     
     if (passwordField.type === "password") {
       passwordField.type = "text";
