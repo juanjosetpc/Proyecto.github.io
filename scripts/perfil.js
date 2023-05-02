@@ -100,3 +100,10 @@ function togglePassword() {
       icon.classList.add("bi-eye");
     }
   }
+
+  icon.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      togglePassword();
+      
+    }
+  });
