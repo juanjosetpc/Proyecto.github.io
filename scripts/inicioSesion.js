@@ -53,7 +53,7 @@ var icon = document.getElementById("icono")
 icon.style.cursor = "pointer"
 icon.style.height = "86%"
 function togglePassword() {
-    var passwordField = document.getElementById("password");
+    var passwordField = document.getElementById("contrasena");
     
     if (passwordField.type === "password") {
       passwordField.type = "text";
