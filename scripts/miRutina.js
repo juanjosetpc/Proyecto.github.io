@@ -10,11 +10,11 @@ function abrir() {
     if (i == 0) {
         i++;
         document.querySelectorAll(".miRutina").forEach(a => a.style.display = "block");
-        titulo.innerHTML = "Mis Rutinas <svg xmlns='http://www.w3.org/2000/svg' width='30' height='20' fill='currentColor' class='bi bi-chevron-up' viewBox='0 0 16 16' id='svg1' tabindex='0'><path fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/></svg>";
+        titulo.innerHTML = "Mis Rutinas <svg xmlns='http://www.w3.org/2000/svg' width='30' height='20' fill='currentColor' class='bi bi-chevron-up' viewBox='0 0 16 16' id='svg1' tabindex='0' aria-label='Mis propias rutinas abierta'><path fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/></svg>";
     } else {
         i--;
         document.querySelectorAll(".miRutina").forEach(a => a.style.display = "none");
-        titulo.innerHTML = "Mis Rutinas <svg xmlns='http://www.w3.org/2000/svg' width='30' height='20' fill='currentColor' class='bi bi-chevron-down' viewBox='0 0 16 16' id='svg1' tabindex='0'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>";
+        titulo.innerHTML = "Mis Rutinas <svg xmlns='http://www.w3.org/2000/svg' width='30' height='20' fill='currentColor' class='bi bi-chevron-down' viewBox='0 0 16 16' id='svg1' tabindex='0' aria-label='Mis propias rutinas collapsada'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>";
     }
 
     svg1Scroll();
@@ -24,12 +24,12 @@ function abrir2() {
     if (i2 == 0) {
         i2++;
         document.querySelectorAll(".rutinaFav").forEach(a => a.style.display = "block");
-        titulo2.innerHTML = "Mis Favoritas <svg xmlns='http://www.w3.org/2000/svg' width='30' height='20' fill='currentColor' class='bi bi-chevron-up' viewBox='0 0 16 16' id='svg2' tabindex='0'><path fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/></svg>";
+        titulo2.innerHTML = "Mis Favoritas <svg xmlns='http://www.w3.org/2000/svg' width='30' height='20' fill='currentColor' class='bi bi-chevron-up' viewBox='0 0 16 16' id='svg2' tabindex='0' aria-label='Mis rutinas favoritas abierta'><path fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/></svg>";
 
     } else {
         i2--;
         document.querySelectorAll(".rutinaFav").forEach(a => a.style.display = "none");
-        titulo2.innerHTML = "Mis Favoritas <svg xmlns='http://www.w3.org/2000/svg' width='30' height='20' fill='currentColor' class='bi bi-chevron-down' viewBox='0 0 16 16' id='svg2' tabindex='0'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>";
+        titulo2.innerHTML = "Mis Favoritas <svg xmlns='http://www.w3.org/2000/svg' width='30' height='20' fill='currentColor' class='bi bi-chevron-down' viewBox='0 0 16 16' id='svg2' tabindex='0' aria-label='Mis rutinas favoritas collapsada'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>";
     }
 
     svg2Scroll();
@@ -50,6 +50,16 @@ const jueves = document.getElementById("jueves");
 const viernes = document.getElementById("viernes");
 const sabado = document.getElementById("sabado");
 const domingo = document.getElementById("domingo");
+
+const dias = document.querySelectorAll('.dias-semana');
+
+dias.forEach(dia => {
+  dia.addEventListener('keydown', event => {
+    if (event.key === 'Enter') {
+      dia.click();
+    }
+  });
+});
 
 modalClose1.addEventListener("click", function () {
     tituloInput.value = ''; descripcion.value = '';
