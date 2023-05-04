@@ -208,6 +208,7 @@ function mostrarRutina2() {
     btnAnadirEjercicio.textContent = "Añadir ejercicio";
     btnAnadirEjercicio.setAttribute("data-bs-toggle", "modal");
     btnAnadirEjercicio.setAttribute("data-bs-target", "#modalAnadirEjercicio");
+    btnAnadirEjercicio.ariaLabel = "boton de añadir ejercicios al dia " + dia.dia;
     btnAnadirEjercicio.addEventListener('click', () => anadirOEditarEjercicio(index, false));
 
     h1.appendChild(btnAnadirEjercicio);
@@ -267,6 +268,7 @@ function mostrarRutina2() {
         dropdownButton.setAttribute('id', `dropdownMenuButton-${arrayEjerciciosJson[ejercicio.idEjercicio]}`);
         dropdownButton.setAttribute('data-bs-toggle', 'dropdown');
         dropdownButton.textContent = 'Options';
+        dropdownButton.ariaLabel = "boton desplegable de opciones del ejercicio " + arrayEjerciciosJson[ejercicio.idEjercicio - 1].nombre;
 
         // Crear menú de dropdown
         const dropdownMenu = document.createElement('div');
@@ -277,6 +279,7 @@ function mostrarRutina2() {
         const editarButton = document.createElement('button');
         editarButton.classList.add('dropdown-item');
         editarButton.textContent = 'Editar';
+        editarButton.ariaLabel = "boton para editar ejercicio " + arrayEjerciciosJson[ejercicio.idEjercicio - 1].nombre;
         editarButton.addEventListener('click', () => {
           editarEjercicio(index, ejercicio);
         });
@@ -287,6 +290,7 @@ function mostrarRutina2() {
         const eliminarButton = document.createElement('button');
         eliminarButton.classList.add('dropdown-item');
         eliminarButton.textContent = 'Eliminar';
+        eliminarButton.ariaLabel = "boton para eliminar ejercicio " + arrayEjerciciosJson[ejercicio.idEjercicio - 1].nombre;
         eliminarButton.addEventListener('click', () => eliminarEjercicio(ejercicio.idEjercicio, index));
 
 
