@@ -136,7 +136,7 @@ function crearRutina() {
     viernes.checked = false;
     sabado.checked = false;
     domingo.checked = false;
-    window.location.href = `miRutinaEnDetalle.html?idRutina=${encodeURIComponent(misRutinasNumber)}`;
+    window.location.href = `./miRutinaEnDetalle.html?idRutina=${encodeURIComponent(misRutinasNumber)}`;
 
     
 }
