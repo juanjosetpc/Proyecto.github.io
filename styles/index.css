@@ -23,19 +23,34 @@ i:hover{
   
 }
 
-
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1{
-    background-attachment: scroll;
-    
+@media screen and (max-width: 600px) {
+  #footer {
+    padding: 32px;
+  }
+  .w3-col {
+    width: 100%;
+    margin-bottom: 16px;
   }
 }
+
+/* For screens larger than 600px */
+@media screen and (min-width: 600px) {
+  #footer {
+    padding: 64px;
+  }
+  .w3-col {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+
 
 #pumpPower
 {
     display: block;
     
-  
+    width: auto;
+    
   position: absolute;
   top: 0;
   left: 0;

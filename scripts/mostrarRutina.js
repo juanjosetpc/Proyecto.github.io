@@ -18,22 +18,27 @@ function mostrarRutina() {
   // Leer el parámetro search de la URL
   const titulo = parameters.get('nombreRutina');
   const imagen = parameters.get('urlImagen');
+  document.getElementById("tituloDelHTML").textContent = "Rutina por defecto | " + titulo;
+
 
   // Mostrar el título en la página
   const tituloElement = document.getElementById('nombreRutina');
   tituloElement.textContent = titulo;
+  tituloElement.setAttribute("tabindex",0);
   const divTituloBackgroundImage = document.getElementById('tituloRutina');
   divTituloBackgroundImage.style.backgroundImage = `url(${imagen})`;
   //------- Esta seccion de codigo carga lo que es el titulo y la imagen de la cabecera de la rutina ------
 
 
-  //----------Carga el icono en blanco si el usuario tiene la rutina en favorita-----------
+  //----------Carga el icono en blanco si el usuario tiene la rutina e00nn favorita-----------
   const favoritas = JSON.parse(localStorage.getItem(logeado + 'favoritas'));
   const fav = document.getElementById('corazon-svg');
   const path = fav.querySelector('path');
   if (favoritas.includes(rutinaID)) {
+    fav.setAttribute("aria-label", "haz click para eliminar de tus favoritas esta rutina");
     path.setAttribute('d', 'M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z');
   } else {
+    fav.setAttribute("aria-label", "haz click para añadir a tus favoritas esta rutina");
     path.setAttribute('d', 'M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z');
   }
   //----------Carga el icono en blanco si el usuario tiene la rutina en favorita-----------
@@ -85,11 +90,14 @@ function mostrarRutina() {
 
           const ejercicioCardHeader = document.createElement('div');
           ejercicioCardHeader.classList.add('card-header', 'd-flex', 'align-items-center');
-          ejercicioCardHeader.textContent = arrayEjerciciosJson[ejercicio.idEjercicio].nombre;
+          ejercicioCardHeader.setAttribute("aria-label", "ejercicio " + arrayEjerciciosJson[ejercicio.idEjercicio].nombre);
 
           const nombreEjercicio = document.createElement('div');  
           nombreEjercicio.classList.add('nombre-ejercicio');
+          nombreEjercicio.textContent = arrayEjerciciosJson[ejercicio.idEjercicio].nombre;
+          nombreEjercicio.setAttribute("tabindex",0);
           ejercicioCardHeader.appendChild(nombreEjercicio);
+
 
           // Crear botón de ayuda
           const ayudaButton = document.createElement('button');
@@ -121,12 +129,16 @@ function mostrarRutina() {
           imagen.classList.add('img-fluid', 'rounded');
           imagen.setAttribute('src', arrayEjerciciosJson[ejercicio.idEjercicio].img);
           imagen.setAttribute('alt', "imagen de ejercicio " + arrayEjerciciosJson[ejercicio.idEjercicio].nombre);
+          imagen.setAttribute('aria-label',  "imagen de ejercicio " + arrayEjerciciosJson[ejercicio.idEjercicio].nombre);
+          imagen.setAttribute("tabindex",0);
 
           const series = document.createElement('p');
           series.textContent = `Series: ${ejercicio.series}`;
+          series.setAttribute("tabindex",0);
 
           const repeticiones = document.createElement('p');
           repeticiones.textContent = `Repeticiones: ${ejercicio.repeticiones}`;
+          repeticiones.setAttribute("tabindex",0);
 
           ejercicioCardBody.appendChild(imagen);
           ejercicioCardBody.appendChild(series);
@@ -155,6 +167,9 @@ function mostrarRutina2() {
   // Mostrar el título en la página
   const tituloElement = document.getElementById('nombreRutina');
   tituloElement.textContent = miRutina.titulo;
+  tituloElement.setAttribute("tabindex",0);
+  document.getElementById("tituloDelHTML").textContent = "Mi rutina personalizada | " + miRutina.titulo;
+
 
   // ----------Crea el contenido dinamicamente (desplegables y tarjetas con los ejercicios)--------
   const rutinaAccordion = document.getElementById('rutinaAccordion');
@@ -216,6 +231,7 @@ function mostrarRutina2() {
 
         const nombreEjercicio = document.createElement('div');
         nombreEjercicio.classList.add('nombre-ejercicio');
+        nombreEjercicio.setAttribute("tabindex",0);
         nombreEjercicio.textContent = arrayEjerciciosJson[ejercicio.idEjercicio - 1].nombre;
         ejercicioCardHeader.appendChild(nombreEjercicio);
 
@@ -288,17 +304,24 @@ function mostrarRutina2() {
         const ejercicioCardBody = document.createElement('div');
         ejercicioCardBody.classList.add('card-body');
 
+
         const imagen = document.createElement('img');
         imagen.classList.add('img-fluid', 'rounded');
         imagen.setAttribute('src', arrayEjerciciosJson[ejercicio.idEjercicio - 1].img);
         imagen.setAttribute('alt', "imagen de ejercicio " + arrayEjerciciosJson[ejercicio.idEjercicio-1].nombre);
+        imagen.setAttribute('aria-label',  "imagen de ejercicio " + arrayEjerciciosJson[ejercicio.idEjercicio-1].nombre);
+        imagen.setAttribute("tabindex",0);
+
 
 
         const series = document.createElement('p');
         series.textContent = `Series: ${ejercicio.series}`;
+        series.setAttribute("tabindex",0);
 
         const repeticiones = document.createElement('p');
         repeticiones.textContent = `Repeticiones: ${ejercicio.repeticiones}`;
+        repeticiones.setAttribute("tabindex",0);
+
 
         ejercicioCardBody.appendChild(imagen);
         ejercicioCardBody.appendChild(series);
@@ -354,7 +377,7 @@ function anadirOEditarEjercicio(dia, editandoEjercicio, ejId) {
     const series = document.getElementById('seriesInput');
     const repeticiones = document.getElementById('repeticionesInput');
     const idEjercicio = document.getElementById('ejercicioIdInput');
-    if (searchInput.value.trim() !== '' && seriesInput.value.trim() !== '' && repeticionesInput.value.trim() !== '') {
+    if (idEjercicio.value.trim() !== '' && seriesInput.value.trim() !== '' && repeticionesInput.value.trim() !== '') {
       const ejercicioAInsertar = {
         series: series.value,
         repeticiones: repeticiones.value,
@@ -375,7 +398,15 @@ function anadirOEditarEjercicio(dia, editandoEjercicio, ejId) {
       location.reload();
 
     } else {
-      alert('Completa todos los campos')
+
+      if(idEjercicio.value.trim() == ''){
+        alert('Completa correctamente el campo de ejercicio. Debes seleccionar uno de los sugeridos por el buscador al escribir.')
+      }else if(seriesInput.value.trim() !== ''){
+        alert('Introduce un numero correcto para las series que quieras realizar')
+      }else{
+        alert('Introduce un numero correcto para las repeticiones que quieras realizar')
+      }
+     
     }
   });
 }
@@ -386,6 +417,7 @@ function buscadorEjercicios() {
   const idEjercicio = document.getElementById('ejercicioIdInput');
 
   searchInput.addEventListener('input', async () => {
+    searchInput.textContent = " ";
     const searchWord = searchInput.value.toLowerCase();
     try {
       const filteredExercises = arrayEjerciciosJson.filter(exercise => exercise.nombre.toLowerCase().includes(searchWord));
@@ -393,6 +425,14 @@ function buscadorEjercicios() {
       filteredExercises.forEach(exercise => {
         const li = document.createElement('li');
         li.textContent = exercise.nombre;
+        li.ariaLabel = exercise.nombre;
+        li.tabIndex = 0;
+        li.addEventListener('keypress', e => {
+          if (e.key === 'Enter') {
+            e.preventDefault(); 
+            li.click(); 
+          }
+        });
         li.addEventListener('click', () => {
           searchInput.value = exercise.nombre;
           idEjercicio.value = exercise.ejerID;
@@ -412,4 +452,5 @@ function buscadorEjercicios() {
     }
   });
 }
+
 
