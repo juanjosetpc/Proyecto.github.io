@@ -75,29 +75,27 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="formAnadirEjercicio" method="post">
-                        <div class="mb-3">
-                            <input title="barra de busqueda de ejercicio" type="text" id="searchInput" placeholder="Buscar ejercicio..." autocomplete="off"
-                                required>
-                            <ul id="suggestions">
-                                <li></li>
-                            </ul>
-                        </div>
-                        <div class="mb-3">
-                            <label for="seriesInput" class="form-label">Series</label>
-                            <input type="number" class="form-control" id="seriesInput" size="10" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="repeticionesInput" class="form-label">Repeticiones</label>
-                            <input type="number" class="form-control" id="repeticionesInput" size="10" required>
-                        </div>
-                        <input type="hidden" id="ejercicioIdInput">
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                            <button type="button" class="btn btn-primary"
-                                id="btnConfirmarAnadirEjercicio">Confirmar</button>
-                        </div>
-                    </form>
+                    <div class="mb-3">
+                        <input title="barra de busqueda de ejercicio" type="text" id="searchInput"
+                            placeholder="Buscar ejercicio..." autocomplete="off" required>
+                        <ul id="suggestions">
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="mb-3">
+                        <label for="seriesInput" class="form-label">Series</label>
+                        <input type="number" class="form-control" id="seriesInput" size="10" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="repeticionesInput" class="form-label">Repeticiones</label>
+                        <input type="number" class="form-control" id="repeticionesInput" size="10" required>
+                    </div>
+                    <input type="hidden" id="ejercicioIdInput">
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary"
+                            id="btnConfirmarAnadirEjercicio">Confirmar</button>
+                    </div>
                 </div>
             </div>
         </div>
