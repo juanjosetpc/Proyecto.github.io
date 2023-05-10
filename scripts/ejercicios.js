@@ -10,14 +10,14 @@ $(document).ready(function(){
         $('.categoryItem').removeClass('ct-item-active');
         $(this).addClass('ct-item-active');
         //Oculto productos
-        $('.col').hide();
+        $('.card').hide();
         //Muestro productos de categoria seleccionada
-        $('.col[category = "'+catEjer+'"]').show();
+        $('.card[category = "'+catEjer+'"]').show();
 
     });
     //Muestra todos los productos
     $('.categoryItem[category ="all"]').click(function(){
-        $('.col').show();
+        $('.card').show();
     });
 });
 
@@ -34,9 +34,9 @@ var miCallback = datos =>{
         html+= "</div>";
         html+= "<div class='row'>";
     app.listaEjercicios.map(ejercicio => { 
-        html+= "<div class='col-lg-4 mb-3 d-flex align-items-stretch' category ='"+ejercicio.tipoMuscular+"'>";
-        html+= "<div class='col' category ='"+ejercicio.tipoMuscular+"'>";
-        html+= "<div class='card h-100' tabindex='0'>";
+        html+= "<div class='col-lg-4 mb-3 d-flex align-items-stretch'>";
+        html+= "<div class='col'>";
+        html+= "<div class='card h-100' tabindex='0' category ='"+ejercicio.tipoMuscular+"'>";
         html+= "<h4 class='card-title'>"+ejercicio.nombre+"</h4>";
         html+= "<div class='card-body d-flex flex-column'>";
         html+= "<p class='card-text mb-4'>Dificultad</p>";
@@ -47,17 +47,17 @@ var miCallback = datos =>{
         html+= "<div class='modal-dialog'>";
         html+= "<div class='modal-content'>";
         html+= "<div class='modal-header'>";
-        html+= "<h5 class='modal-title' id='modalTitle"+ejercicio.modalID+"'>Consejos y Errores Comunes</h5>";
+        html+= "<h3 class='modal-title' id='modalTitle"+ejercicio.modalID+"'>Consejos y Errores Comunes</h3>";
         html+= "<button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>";
         html+= "</div>";
         html+= "<div class='modal-body'>";
-        html+= "<h6>Antes una breve descripcion:</h6>";
+        html+= "<h4>Antes una breve descripcion:</h4>";
         html+= "<p>"+ejercicio.descripcion+"</p>";
-        html+= "<h6>Errores habituales: </h6>";
+        html+= "<h4>Errores habituales: </h4>";
         html+= "<ul>";
         html+= "<li>"+ejercicio.error+"</li>";
         html+= "</ul>";
-        html+= "<h6>Consejo clave:</h6>";
+        html+= "<h4>Consejo clave:</h4>";
         html+= "<ul>";
         html+= "<li>"+ejercicio.consejo+"</li>";
         html+= "</ul>";
