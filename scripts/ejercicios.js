@@ -29,7 +29,7 @@ var miCallback = datos =>{
     html+= "<div class='container-fluid'>";
         html+= "<div class='row pt-5'>";
         html+= "<div class='col-12'>";
-        html+= "<h3 class='text-uppercase border-bottom mb-4'>Coleccion de ejercicios</h3>";
+        html+= "<h1 class='text-uppercase border-bottom mb-4'>Coleccion de ejercicios</h1>";
         html+= "</div>";
         html+= "</div>";
         html+= "<div class='row'>";
