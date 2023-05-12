@@ -9,12 +9,14 @@ h1 {
 }
 h3{
     color: rgb(255, 255, 255);
+    font-size: 2em;
     display: flex;
 }
-h2{
+.text-uppercase.sm-12{
     color: rgb(255, 255, 255);
-    display: flex;
+    display: block;
     font-size: 2em;
+    text-transform: uppercase;
 }
 *{
     margin:0;
