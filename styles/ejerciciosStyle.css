@@ -12,7 +12,7 @@ h3{
     font-size: 2em;
     display: flex;
 }
-.text-uppercase.sm-12{
+.text-uppercase.border-bottom.mb-4{
     color: rgb(255, 255, 255);
     display: block;
     font-size: 2em;
