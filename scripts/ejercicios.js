@@ -10,14 +10,14 @@ $(document).ready(function(){
         $('.categoryItem').removeClass('ct-item-active');
         $(this).addClass('ct-item-active');
         //Oculto productos
-        $('.col').hide();
+        $(".col-lg-4.mb-3.align-items-stretch").hide();
         //Muestro productos de categoria seleccionada
-        $('.col[category = "'+catEjer+'"]').show();
+        $('.col-lg-4.mb-3.align-items-stretch[category = "'+catEjer+'"]').show();
 
     });
     //Muestra todos los productos
     $('.categoryItem[category ="all"]').click(function(){
-        $('.col').show();
+        $(".col-lg-4.mb-3.align-items-stretch").show();
     });
 });
 
@@ -34,8 +34,8 @@ var miCallback = datos =>{
         html+= "</div>";
         html+= "<div class='row'>";
     app.listaEjercicios.map(ejercicio => { 
-        html+= "<div class='col-lg-4 mb-3 d-flex align-items-stretch'>";
-        html+= "<div class='col' category ='"+ejercicio.tipoMuscular+"'>";
+        html+= "<div class='col-lg-4 mb-3 align-items-stretch' category ='"+ejercicio.tipoMuscular+"'>";
+        html+= "<div class='col'>";
         html+= "<div class='card h-100' tabindex='0' >";
         html+= "<h3 class='card-title'>"+ejercicio.nombre+"</h3>";
         html+= "<div class='card-body d-flex flex-column'>";
