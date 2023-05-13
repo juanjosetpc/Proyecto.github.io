@@ -111,14 +111,24 @@
                     "dia": "Lunes",
                     "ejercicios": [
                         {
-                            "idEjercicio":2,
-                            "series": 3,
-                            "repeticiones": 10
+                            "idEjercicio":1,
+                            "series": 4,
+                            "repeticiones":5 
                         },
                         {
-                            "idEjercicio":3,
+                            "idEjercicio":10,
                             "series": 4,
-                            "repeticiones": 8
+                            "repeticiones": 15
+                        },
+                        {
+                            "idEjercicio":6,
+                            "series": 4,
+                            "repeticiones":12
+                        },
+                        {
+                            "idEjercicio":7,
+                            "series": 4,
+                            "repeticiones":10
                         }
                     ]
                 },
@@ -126,14 +136,24 @@
                     "dia":"Miércoles",
                     "ejercicios":[
                         {
-                            "idEjercicio":4,
-                            "series": 3,
+                            "idEjercicio":9,
+                            "series": 4,
+                            "repeticiones": 5
+                          },
+                          {
+                            "idEjercicio":2,
+                            "series": 4,
                             "repeticiones": 10
+                          },
+                          {
+                            "idEjercicio":8,
+                            "series": 4,
+                            "repeticiones": 12
                           },
                           {
                             "idEjercicio":5,
                             "series": 4,
-                            "repeticiones": 8
+                            "repeticiones": 12
                           }
 
                     ]
@@ -142,14 +162,24 @@
                     "dia":"Viernes",
                     "ejercicios":[
                         {
-                            "idEjercicio":6,
-                            "series": 3,
+                            "idEjercicio":4,
+                            "series": 4,
                             "repeticiones": 10
                           },
                           {
-                            "idEjercicio":7,
+                            "idEjercicio":2,
                             "series": 4,
                             "repeticiones": 8
+                          },
+                          {
+                            "idEjercicio":3,
+                            "series": 4,
+                            "repeticiones": 15
+                          },
+                          {
+                            "idEjercicio":10,
+                            "series": 4,
+                            "repeticiones": 12
                           }
 
                     ]
@@ -166,14 +196,19 @@
                     "dia": "Lunes",
                     "ejercicios": [
                         {
-                            "idEjercicio":8,
+                            "idEjercicio":4,
                             "series": 3,
                             "repeticiones": 10
                         },
                         {
-                            "idEjercicio":2,
+                            "idEjercicio":5,
                             "series": 4,
                             "repeticiones": 8
+                        },
+                        {
+                            "idEjercicio":6,
+                            "series": 4,
+                            "repeticiones": 10
                         }
                     ]
                 },
@@ -181,14 +216,19 @@
                     "dia":"Martes",
                     "ejercicios":[
                         {
-                            "idEjercicio":3,
+                            "idEjercicio":1,
                             "series": 3,
                             "repeticiones": 10
                           },
                           {
-                            "idEjercicio":9,
+                            "idEjercicio":10,
                             "series": 4,
-                            "repeticiones": 8
+                            "repeticiones": 15
+                          },
+                          {
+                            "idEjercicio":3,
+                            "series": 4,
+                            "repeticiones":15
                           }
 
                     ]
@@ -197,166 +237,60 @@
                     "dia":"Miércoles",
                     "ejercicios":[
                         {
-                            "idEjercicio":7,
-                            "series": 3,
-                            "repeticiones": 10
-                          },
-                          {
-                            "idEjercicio":10,
-                            "series": 4,
-                            "repeticiones": 8
-                          }
-
-                    ]
-                },
-                {
-                    "dia":"Jueves",
-                    "ejercicios":[
-                        {
-                            "idEjercicio":7,
-                            "series": 3,
-                            "repeticiones": 10
-                          },
-                          {
-                            "idEjercicio":10,
-                            "series": 4,
-                            "repeticiones": 8
-                          }
-
-                    ]
-                },
-                {
-                    "dia":"Viernes",
-                    "ejercicios":[
-                        {
-                            "idEjercicio":7,
-                            "series": 3,
-                            "repeticiones": 10
-                          },
-                          {
-                            "idEjercicio":10,
-                            "series": 4,
-                            "repeticiones": 8
-                          }
-
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 3,
-            "nombre": "1 Músculo por día",
-            "descripcion": "Rutina para los que no quieren dejar ningún músculo sin destrozar, 7 días a la semana",
-            "banner": "https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/rutinasDefault/1-musculo-por-dia.jpeg",
-            "dias": [
-                {
-                    "dia": "Lunes",
-                    "ejercicios": [
-                        {
-                            "idEjercicio":8,
+                            "idEjercicio":4,
                             "series": 3,
                             "repeticiones": 10
                         },
                         {
-                            "idEjercicio":2,
+                            "idEjercicio":6,
                             "series": 4,
-                            "repeticiones": 8
-                        }
-                    ]
-                },
-                {
-                    "dia":"Martes",
-                    "ejercicios":[
-                        {
-                            "idEjercicio":3,
-                            "series": 3,
                             "repeticiones": 10
-                          },
-                          {
-                            "idEjercicio":9,
-                            "series": 4,
-                            "repeticiones": 8
-                          }
-
-                    ]
-                },
-                {
-                    "dia":"Miércoles",
-                    "ejercicios":[
+                        },
                         {
                             "idEjercicio":7,
-                            "series": 3,
-                            "repeticiones": 10
-                          },
-                          {
-                            "idEjercicio":10,
                             "series": 4,
-                            "repeticiones": 8
-                          }
-
+                            "repeticiones": 12
+                        }
                     ]
                 },
                 {
                     "dia":"Jueves",
                     "ejercicios":[
                         {
-                            "idEjercicio":7,
+                            "idEjercicio":9,
                             "series": 3,
+                            "repeticiones": 5
+                          },
+                          {
+                            "idEjercicio":2,
+                            "series": 4,
                             "repeticiones": 10
                           },
                           {
-                            "idEjercicio":10,
-                            "series": 4,
-                            "repeticiones": 8
+                            "idEjercicio":8,
+                            "series": 3,
+                            "repeticiones": 12
                           }
-
                     ]
                 },
                 {
                     "dia":"Viernes",
                     "ejercicios":[
                         {
-                            "idEjercicio":7,
+                            "idEjercicio":4,
                             "series": 3,
                             "repeticiones": 10
-                          },
-                          {
-                            "idEjercicio":10,
-                            "series": 4,
-                            "repeticiones": 8
-                          }
-
-                    ]
-                },
-                {
-                    "dia":"Sábado",
-                    "ejercicios":[
+                        },
                         {
-                            "idEjercicio":7,
-                            "series": 3,
-                            "repeticiones": 10
-                          },
-                          {
-                            "idEjercicio":10,
+                            "idEjercicio":5,
                             "series": 4,
                             "repeticiones": 8
-                          }
-
-                    ]
-                },
-                {
-                    "dia":"Domingo",
-                    "ejercicios":[
+                        },
                         {
-                            "idEjercicio":7,
-                            "series": 3,
-                            "repeticiones": 10
-                          },
-                          {
-                            "idEjercicio":10,
+                            "idEjercicio":6,
                             "series": 4,
-                            "repeticiones": 8
-                          }
+                            "repeticiones": 10
+                        }
 
                     ]
                 }

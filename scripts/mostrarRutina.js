@@ -90,11 +90,11 @@ function mostrarRutina() {
 
           const ejercicioCardHeader = document.createElement('div');
           ejercicioCardHeader.classList.add('card-header', 'd-flex', 'align-items-center');
-          ejercicioCardHeader.setAttribute("aria-label", "ejercicio " + arrayEjerciciosJson[ejercicio.idEjercicio].nombre);
+          ejercicioCardHeader.setAttribute("aria-label", "ejercicio " + arrayEjerciciosJson[ejercicio.idEjercicio-1].nombre);
 
           const nombreEjercicio = document.createElement('div');  
           nombreEjercicio.classList.add('nombre-ejercicio');
-          nombreEjercicio.textContent = arrayEjerciciosJson[ejercicio.idEjercicio].nombre;
+          nombreEjercicio.textContent = arrayEjerciciosJson[ejercicio.idEjercicio-1].nombre;
           nombreEjercicio.setAttribute("tabindex",0);
           ejercicioCardHeader.appendChild(nombreEjercicio);
 
@@ -105,16 +105,16 @@ function mostrarRutina() {
           ayudaButton.setAttribute('aria-label', 'obtener informacion del ejercicio');
           ayudaButton.innerHTML = '<i class="bi bi-info-circle-fill"></i>';
           ayudaButton.addEventListener('click', () => {
-            const consejo = arrayEjerciciosJson[ejercicio.idEjercicio].consejo;
-            const error = arrayEjerciciosJson[ejercicio.idEjercicio].error;
-            const descripcion = arrayEjerciciosJson[ejercicio.idEjercicio].descripcion;
+            const consejo = arrayEjerciciosJson[ejercicio.idEjercicio-1].consejo;
+            const error = arrayEjerciciosJson[ejercicio.idEjercicio-1].error;
+            const descripcion = arrayEjerciciosJson[ejercicio.idEjercicio-1].descripcion;
             const modalInfo = document.getElementById('modal-body-info-ejercicio');
             modalInfo.innerHTML = `
-          <h3>Antes una breve descripción:</h3>
+          <h3>Una pequeña descripción del ejercicio:</h3>
           <p>${descripcion}</p>
-          <h4>Errores habituales:</h4>
+          <h4>Errores más habituales:</h4>
           <ul>${error}</ul>
-          <h4>Consejo clave:</h4>
+          <h4>Algunos consejos clave:</h4>
           <ul>${consejo}</ul>`;
           });
           ayudaButton.setAttribute("data-bs-toggle", "modal");
@@ -127,9 +127,9 @@ function mostrarRutina() {
 
           const imagen = document.createElement('img');
           imagen.classList.add('img-fluid', 'rounded');
-          imagen.setAttribute('src', arrayEjerciciosJson[ejercicio.idEjercicio].img);
-          imagen.setAttribute('alt', "imagen de ejercicio " + arrayEjerciciosJson[ejercicio.idEjercicio].nombre);
-          imagen.setAttribute('aria-label',  "imagen de ejercicio " + arrayEjerciciosJson[ejercicio.idEjercicio].nombre);
+          imagen.setAttribute('src', arrayEjerciciosJson[ejercicio.idEjercicio-1].img);
+          imagen.setAttribute('alt', "imagen de ejercicio " + arrayEjerciciosJson[ejercicio.idEjercicio-1].nombre);
+          imagen.setAttribute('aria-label',  "imagen de ejercicio " + arrayEjerciciosJson[ejercicio.idEjercicio-1].nombre);
           imagen.setAttribute("tabindex",0);
 
           const series = document.createElement('p');
@@ -247,13 +247,13 @@ function mostrarRutina2() {
           const descripcion = arrayEjerciciosJson[ejercicio.idEjercicio - 1].descripcion;
           const modalInfo = document.getElementById('modal-body-info-ejercicio');
           modalInfo.innerHTML = `
-          <h3>Antes una breve descripción:</h3>
+          <h3>Una pequeña descripción del ejercicio:</h3>
           <p>${descripcion}</p>
-          <h4>Errores habituales:</h4>
+          <h4>Errores más habituales:</h4>
           <ul>${error}</ul>
-          <h4>Consejo clave:</h4>
+          <h4>Algunos consejos clave:</h4>
           <ul>${consejo}</ul>`;
-        });
+          });
         ayudaButton.setAttribute("data-bs-toggle", "modal");
         ayudaButton.setAttribute("data-bs-target", "#modal-info-ejercicio");
 
@@ -265,7 +265,7 @@ function mostrarRutina2() {
         const dropdownButton = document.createElement('button');
         dropdownButton.classList.add('btn', 'btn-secondary', 'dropdown-toggle');
         dropdownButton.setAttribute('type', 'button');
-        dropdownButton.setAttribute('id', `dropdownMenuButton-${arrayEjerciciosJson[ejercicio.idEjercicio]}`);
+        dropdownButton.setAttribute('id', `dropdownMenuButton-${arrayEjerciciosJson[ejercicio.idEjercicio-1]}`);
         dropdownButton.setAttribute('data-bs-toggle', 'dropdown');
         dropdownButton.textContent = 'Options';
         dropdownButton.ariaLabel = "boton desplegable de opciones del ejercicio " + arrayEjerciciosJson[ejercicio.idEjercicio - 1].nombre;
@@ -273,7 +273,7 @@ function mostrarRutina2() {
         // Crear menú de dropdown
         const dropdownMenu = document.createElement('div');
         dropdownMenu.classList.add('dropdown-menu');
-        dropdownMenu.setAttribute('aria-labelledby', `dropdownMenuButton-${arrayEjerciciosJson[ejercicio.idEjercicio]}`);
+        dropdownMenu.setAttribute('aria-labelledby', `dropdownMenuButton-${arrayEjerciciosJson[ejercicio.idEjercicio-1]}`);
 
         // Crear botón de editar
         const editarButton = document.createElement('button');
