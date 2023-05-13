@@ -10,14 +10,14 @@ $(document).ready(function(){
         $('.categoryItem').removeClass('ct-item-active');
         $(this).addClass('ct-item-active');
         //Oculto productos
-        $('.col').hide();
+        $(".col-lg-4.mb-3.align-items-stretch").hide();
         //Muestro productos de categoria seleccionada
-        $('.col[category = "'+catEjer+'"]').show();
+        $('.col-lg-4.mb-3.align-items-stretch[category = "'+catEjer+'"]').show();
 
     });
     //Muestra todos los productos
     $('.categoryItem[category ="all"]').click(function(){
-        $('.col').show();
+        $(".col-lg-4.mb-3.align-items-stretch").show();
     });
 });
 
@@ -29,15 +29,15 @@ var miCallback = datos =>{
     html+= "<div class='container-fluid'>";
         html+= "<div class='row pt-5'>";
         html+= "<div class='col-12'>";
-        html+= "<h1 class='text-uppercase border-bottom mb-4'>Coleccion de ejercicios</h1>";
+        html+= "<h2 class='text-uppercase border-bottom mb-4'>Coleccion de ejercicios</h2>";
         html+= "</div>";
         html+= "</div>";
         html+= "<div class='row'>";
     app.listaEjercicios.map(ejercicio => { 
-        html+= "<div class='col-lg-4 mb-3 d-flex align-items-stretch' category ='"+ejercicio.tipoMuscular+"'>";
-        html+= "<div class='col' category ='"+ejercicio.tipoMuscular+"'>";
-        html+= "<div class='card h-100' tabindex='0'>";
-        html+= "<h4 class='card-title'>"+ejercicio.nombre+"</h4>";
+        html+= "<div class='col-lg-4 mb-3 align-items-stretch' category ='"+ejercicio.tipoMuscular+"'>";
+        html+= "<div class='col'>";
+        html+= "<div class='card h-100' tabindex='0' >";
+        html+= "<h3 class='card-title'>"+ejercicio.nombre+"</h3>";
         html+= "<div class='card-body d-flex flex-column'>";
         html+= "<p class='card-text mb-4'>Dificultad</p>";
         html+= "<img src='"+ejercicio.img+"' class='card-img-top' alt='Imagen de "+ejercicio.nombre+"'></img>";
@@ -47,23 +47,23 @@ var miCallback = datos =>{
         html+= "<div class='modal-dialog'>";
         html+= "<div class='modal-content'>";
         html+= "<div class='modal-header'>";
-        html+= "<h5 class='modal-title' id='modalTitle"+ejercicio.modalID+"'>Consejos y Errores Comunes</h5>";
+        html+= "<h4 class='modal-title' id='modalTitle"+ejercicio.modalID+"'>¿Qué necesitas saber?</h4>";
         html+= "<button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>";
         html+= "</div>";
         html+= "<div class='modal-body'>";
-        html+= "<h6>Antes una breve descripcion:</h6>";
+        html+= "<h5>Una pequeña descripción del ejercicio:</h5>";
         html+= "<p>"+ejercicio.descripcion+"</p>";
-        html+= "<h6>Errores habituales: </h6>";
+        html+= "<h5>Errores más habituales: </h5>";
         html+= "<ul>";
         html+= "<li>"+ejercicio.error+"</li>";
         html+= "</ul>";
-        html+= "<h6>Consejo clave:</h6>";
+        html+= "<h5>Algunos consejos clave:</h5>";
         html+= "<ul>";
         html+= "<li>"+ejercicio.consejo+"</li>";
         html+= "</ul>";
         html+= "</div>";
         html+= "<div class='modal-footer'>";
-        html+= "<button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Cerrar</button>";
+        html+= "<button type='button' class='btn btn-secondary' data-bs-dismiss='modal' aria-label='Botón Cerrar Ventana'>Cerrar</button>";
         html+= "</div>";
         html+= "</div>";
         html+= "</div>";

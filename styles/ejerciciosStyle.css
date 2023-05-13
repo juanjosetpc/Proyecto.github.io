@@ -2,6 +2,8 @@
 body{
     background-color: black;;
 }
+
+
 h1 {
     color: #fff;
     display: flex;
@@ -9,7 +11,14 @@ h1 {
 }
 h3{
     color: rgb(255, 255, 255);
+    font-size: 2em;
     display: flex;
+}
+.text-uppercase.border-bottom.mb-4{
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 2em;
+    text-transform: uppercase;
 }
 *{
     margin:0;
