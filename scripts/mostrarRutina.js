@@ -110,11 +110,11 @@ function mostrarRutina() {
             const descripcion = arrayEjerciciosJson[ejercicio.idEjercicio].descripcion;
             const modalInfo = document.getElementById('modal-body-info-ejercicio');
             modalInfo.innerHTML = `
-          <h6>Antes una breve descripción:</h6>
+          <h3>Antes una breve descripción:</h3>
           <p>${descripcion}</p>
-          <h6>Errores habituales:</h6>
+          <h4>Errores habituales:</h4>
           <ul>${error}</ul>
-          <h6>Consejo clave:</h6>
+          <h4>Consejo clave:</h4>
           <ul>${consejo}</ul>`;
           });
           ayudaButton.setAttribute("data-bs-toggle", "modal");
@@ -247,11 +247,11 @@ function mostrarRutina2() {
           const descripcion = arrayEjerciciosJson[ejercicio.idEjercicio - 1].descripcion;
           const modalInfo = document.getElementById('modal-body-info-ejercicio');
           modalInfo.innerHTML = `
-          <h6>Antes una breve descripción:</h6>
+          <h3>Antes una breve descripción:</h3>
           <p>${descripcion}</p>
-          <h6>Errores habituales:</h6>
+          <h4>Errores habituales:</h4>
           <ul>${error}</ul>
-          <h6>Consejo clave:</h6>
+          <h4>Consejo clave:</h4>
           <ul>${consejo}</ul>`;
         });
         ayudaButton.setAttribute("data-bs-toggle", "modal");

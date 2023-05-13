@@ -98,6 +98,39 @@
           }
         ]
       }
+    },
+    {
+      "div": {
+        "class":"col-12 col-md-4 mb-4 image-container",
+        "data-dias": "7",
+        "data-dificult":"alta",
+        "children": [
+          {
+            "img": {
+              "id": "1 Músculo por día",
+              "src": "images/rutinasDefault/tiron-empuje.jpeg",
+              "alt": "Rtuina de 1 músculo por día, 7 días y dificultad alta"
+            }
+          },
+          {
+            "div": {
+              "class": "grey-square",
+              "children": [
+                {
+                  "a": {
+                    "href": "rutinaDefaultEnDetalle.html",
+                    "data-nombreRutina": "1 Músculo por día",
+                    "data-urlImagen": "images/rutinasDefault/1-musculo-por-dia.jpeg",
+                    "data-idRutina": "3",
+                    "class": "miEnlace",
+                    "text": "1 Músculo por día (7 días a la semana)"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     }
   ]
 }
