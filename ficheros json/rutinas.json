@@ -293,6 +293,27 @@
                         }
 
                     ]
+                },
+                {
+                    "dia":"Sábado",
+                    "ejercicios":[
+                        {
+                            "idEjercicio":9,
+                            "series": 3,
+                            "repeticiones": 5
+                          },
+                          {
+                            "idEjercicio":2,
+                            "series": 4,
+                            "repeticiones": 10
+                          },
+                          {
+                            "idEjercicio":8,
+                            "series": 3,
+                            "repeticiones": 12
+                          }
+
+                    ]
                 }
             ]
         }
