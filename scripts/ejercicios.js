@@ -60,7 +60,7 @@ var miCallback = datos =>{
         html+= "</div>";
         html+= "</div>";
 
-    //Html para cargar los ejercicios en cards
+    //Html para cargar los ejercicios en cards.
         html+= "<div class='row'>";
     app.listaEjercicios.map(ejercicio => { 
         html+= "<div class='col-lg-4 mb-3 align-items-stretch' category ='"+ejercicio.tipoMuscular+"'>";
