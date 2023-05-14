@@ -7,12 +7,13 @@ body{
 h1 {
     color: #fff;
     display: flex;
-    font-size: 2em;
+    font-size: 1.6em;
 }
 h3{
     color: rgb(255, 255, 255);
-    font-size: 2em;
+    font-size: 1.6em;
     display: flex;
+    text-align: center;
 }
 .text-uppercase.border-bottom.mb-4{
     color: rgb(255, 255, 255);

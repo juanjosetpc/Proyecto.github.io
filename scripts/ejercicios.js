@@ -23,7 +23,7 @@ $(document).ready(function(){
     //Scrip buscador con jQuery
     $('#buscador').keyup(function(){
         var nombres = $('.card-title');
-        var buscando = $(this).val();
+        var buscando = $(this).val().toLowerCase();
         var item = '';
         for (var i = 0; i < nombres.length; i++){
             item = $(nombres[i]).html().toLowerCase();
@@ -48,9 +48,9 @@ var app ={};
 var miCallback = datos =>{
     app.listaEjercicios=datos;
     var html=""
-    html+= "<div class='container-fluid'>";
+    html+= "<div class='container-sm'>";
     //Buscador
-        html+= "<div class='row pt-5'>";
+        html+= "<div class='row'>";
         html+= "<div class='col-12'>";
         html+= "<h2 class='text-uppercase border-bottom mb-4'>Coleccion de ejercicios</h2>";
         html+= "<div class='input-group mb-4'>";
@@ -63,13 +63,12 @@ var miCallback = datos =>{
         html+= "<div class='row'>";
     app.listaEjercicios.map(ejercicio => { 
         html+= "<div class='col-lg-4 mb-3 align-items-stretch' category ='"+ejercicio.tipoMuscular+"'>";
-        html+= "<div class='col'>";
-        html+= "<div class='card h-100' tabindex='0' >";
+        html+= "<div class='card h-100 border-primary mb-3' tabindex='0' >";
         html+= "<h3 class='card-title'>"+ejercicio.nombre+"</h3>";
         html+= "<div class='card-body d-flex flex-column'>";
-        html+= "<p class='card-text mb-4'>Dificultad</p>";
-        html+= "<img src='"+ejercicio.img+"' class='card-img-top' alt='Imagen de "+ejercicio.nombre+"'></img>";
-        html+= "<button type='button' class='btn btn-primary mt-auto align-self-start' data-bs-toggle='modal' data-bs-target='#"+ejercicio.modalID+"'>Saber Mas</button>";
+        html+= "<img src='"+ejercicio.img+"' class='card-img-top img-thumbnail' alt='Imagen de "+ejercicio.nombre+"'></img>";
+        html+= "<p class='card-text mt-4'>Dificultad: "+ejercicio.dificultad+" </p>";
+        html+= "<button type='button' class='btn btn-primary mt-auto align--items-end' data-bs-toggle='modal' data-bs-target='#"+ejercicio.modalID+"'>Saber Mas</button>";
        //Html para cada modal
         html+= "<div class='modal fade' id='"+ejercicio.modalID+"' tabindex='-1' aria-hidden='true' aria-labelledby='modalTitle"+ejercicio.modalID+"'>";
         html+= "<div class='modal-dialog'>";
@@ -97,7 +96,6 @@ var miCallback = datos =>{
         html+= "</div>";
         html+= "</div>";
 
-        html+= "</div>";
         html+= "</div>";
         html+= "</div>";
         html+= "</div>";
