@@ -128,5 +128,57 @@ miCallback([
     "series":"5",
     "repeticiones":"12",
     "img":"https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/Prensa.png"
-    }
+    },
+    {
+    "ejerID":"11",
+    "modalID":"11",
+    "tipoMuscular":"Brazos",
+    "nombre":"Press Militar con Mancuerna",
+    "dificultad":"BAJA",
+    "descripcion": "Ejercicio sencillo y efectivo para principiantes y avanzados donde trabajaremos los deltoides(musculatura del hombro). Muy bueno tanto para lograr fuerza como hipertrofia.",
+    "error":"Bloquear codos en la extensión, arquear demasiado la zona lumbar, sacar el peso desde la posición más baja o demasiada inestabilidad al realizar el movimiento.",
+    "consejo":"Colocar el banco ligeramente inclinado, sujetamos en pronación (nudillos hacia atrás), descenso controlado hasta llevar el peso a la altura de la clavícula y la extensión por encima de la cabeza evitando bloquear codos.",
+    "series":"5",
+    "repeticiones":"10",
+    "img":"https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/pressMilitar.png"
+    },
+    {
+    "ejerID":"12",
+    "modalID":"12",
+    "tipoMuscular":"Brazos",
+    "nombre":"Curl de Biceps",
+    "dificultad":"BAJA",
+    "descripcion": "Ejercicio simple donde trabajaremos la musculatura del biceps, que en general se trabaja para hipertrofia.",
+    "error":"Balancear el cuerpo y los codos ayudandose de la inercia, hacer esfuerzo excesivo de los dorsales",
+    "consejo":"Piernas un poco separadas para mantener el equilibrio, tanto tronco como codos y muñecas bloqueado para intentar focalizar el biceps, bajada controlada y subida hasta llegar al límite del biceps.",
+    "series":"4",
+    "repeticiones":"15",
+    "img":"https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/curlBiceps.png"
+    },
+    {
+    "ejerID":"13",
+    "modalID":"13",
+    "tipoMuscular":"Brazos",
+    "nombre":"Triceps en Polea",
+    "dificultad":"BAJA",
+    "descripcion": "Ejercicio simple donde trabajaremos la musculatura del triceps, que en general se trabaja para hipertrofia.",
+    "error":"Hacer esfuerzo excesivo de los dorsales, darse impulso con el dorsal y los codos o recorrido muy corto o excesivamente largo",
+    "consejo":"De pie frente a la polea alta sujentando en pronación (palmas hacia el suelo) a la altura algo inferior al hombro, nos inclinamos para echar encima un poco nuestro peso, mantenemos tronco fijo, y bajada hasta el limite del triceps y controlando la subida hasta la misma posición que al principio.",
+    "series":"4",
+    "repeticiones":"15",
+    "img":"https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/curlBiceps.png"
+    },
+    {
+    "ejerID":"14",
+    "modalID":"14",
+    "tipoMuscular":"Abdomen",
+    "nombre":"Abdomen en polea",
+    "dificultad":"MEDIA",
+    "descripcion": "Ejercicio excelente y recomendado aprender, trabajando toda las musculatura del core (toda la zona abdominal). Requiere tener una técnica correcta pero sin riesgos de lesión.",
+    "error":"Flexión del tronco sin participación suficiente del abdomen (debido a que requiere técnica), recorrido demasiado rápido o insuficiente.",
+    "consejo":"De rodilla bajo la polea media, sujetar la barra encima de la nuca en supinación (nudillos hacia fuera), se bloqua tronco y brazos, efectuamos una contracción acercando la zona de las costillas a la pelvis (el movimiento es de enrollarse, no de una flexión de tronco), y tanto durante la bajada como la subida debe ser controlada.",
+    "series":"3",
+    "repeticiones":"12",
+    "img":"https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/images/ejercicios/abdomen.png"
+    },
 ]);

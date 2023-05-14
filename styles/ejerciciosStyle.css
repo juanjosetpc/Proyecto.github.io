@@ -6,7 +6,7 @@ body{
 h1 {
     color: #fff;
     display: flex;
-    font-size: 1.6em;
+    font-size: 1.2em;
 }
 h3{
     color: rgb(255, 255, 255);
@@ -45,9 +45,11 @@ h3{
     padding: 15px 0;
     margin-bottom: 20px;
     background-color: dimgrey;
-    text-align: center;
+    text-align:center;
+    -ms-text-size-adjust: auto;
     text-decoration: none;
     color: #fff;
+    font-size:small;
 }
 
 .category-list .ct-item-active{
