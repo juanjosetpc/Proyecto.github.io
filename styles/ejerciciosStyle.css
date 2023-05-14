@@ -3,7 +3,6 @@ body{
     background-color: black;;
 }
 
-
 h1 {
     color: #fff;
     display: flex;
@@ -59,4 +58,8 @@ img{
     height: auto;
     width: auto;
     max-height: 200px;
+}
+
+.textoLabel{
+    color: rgb(255, 255, 255);
 }
