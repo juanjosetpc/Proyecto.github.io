@@ -43,26 +43,20 @@
   </nav>
 
   <!--REFACTORIZAR LO SIGUIENTE CON JSON PARA CARGAR DINAMICAMENTE-->
+  
   <div class = "container-fluid">
     <div role="main" class = "container-fluid ejercicios-wrapper" aria-label="Colección de ejercicios">
       <div role ="complementary " class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-5 category-list" aria-label="Filtro disponible.">
-        <h1 class="text-uppercase sm-12">Filtra por musculo</h1>
-        <button  href ="#" class="row categoryItem" onclick="filterProduct('all')" category = "all" aria-label="Filtro para mostrar todo" >Todos</button>
-        <button  href ="#" class="row categoryItem" onclick="filterProduct('Pecho')" category = "Pecho"  aria-label="Filtra por pecho">Pecho</button>
-        <button  href ="#" class="row categoryItem" onclick="filterProduct('Espalda')" category = "Espalda" aria-label="Filtra por espalda">Espalda</button>
-        <button  href ="#" class="row categoryItem" onclick="filterProduct('Piernas')" category = "Piernas"   aria-label="Filtra por piernas">Piernas</button>
+        <h1 class="text-uppercase sm-12" tabindex="0">Filtra por musculo</h1>
+        <button  href ="#" class="row categoryItem" category = "all" aria-label="Filtro para mostrar todo" >Todos</button>
+        <button  href ="#" class="row categoryItem" category = "Pecho"  aria-label="Filtra por pecho">Pecho</button>
+        <button  href ="#" class="row categoryItem" category = "Espalda" aria-label="Filtra por espalda">Espalda</button>
+        <button  href ="#" class="row categoryItem" category = "Piernas"   aria-label="Filtra por piernas">Piernas</button>
       </div>
       <section class="bg-black pt-1 pb-3 shadow-sm" id = "listado-ejercicios"></section>
     </div>
   </div>
   <script src="./scripts/jquery-3.6.4.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-      (function () {
-          $('[data-bs-toggle="tooltip"]').tooltip()
-      })();
-  });
-  </script>
   <script src = "./scripts/ejercicios.js"></script>
   <script src = "./ficheros json/listaEjercicios.jsonp"></script>
 
