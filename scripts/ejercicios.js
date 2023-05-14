@@ -54,7 +54,7 @@ var miCallback = datos =>{
         html+= "<div class='col-12'>";
         html+= "<h2 class='text-uppercase border-bottom mb-4'>Coleccion de ejercicios</h2>";
         html+= "<div class='input-group mb-4'>";
-        html+= "<input id='buscador' type='search' class='form-control rounded' placeholder='Escribe un ejercicio' aria-label='Escribe un ejercicio para buscar' aria-describedby='search-addon'/>";
+        html+= "<input id='buscador' type='text' class='form-control rounded' placeholder='Escribe un ejercicio' aria-label='Escribe un ejercicio para buscar' aria-describedby='search-addon'/>";
         html+= "<button type='button' class='btn btn-outline-primary' aria-label='botón buscar'>Buscar</button>";
         html+= "</div>";
         html+= "</div>";
