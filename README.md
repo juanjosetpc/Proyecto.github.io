@@ -1,4 +1,4 @@
-# ProyectoInterfaces
+# PumPower
 Para desplegar la aplicación basta con entrar al siguiente enlace:
 https://juanjosetpc.github.io/Proyecto.github.io/index.html
 
